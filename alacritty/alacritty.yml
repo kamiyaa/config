@@ -71,21 +71,24 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: OverpassMono Nerd Font
+    family: Monospace
+    # OverpassMono Nerd Font
 #    family: noto mono
     # The `style` can be specified to pick a specific face.
     style: Regular
 
   # Bold font face
   bold:
-    family: OverpassMono Nerd Font
+    family: Monospace
+    # OverpassMono Nerd Font
 #    family: noto mono
     # The `style` can be specified to pick a specific face.
     style: Bold
 
   # Italic font face
   italic:
-    family: OverpassMono Nerd Font
+    family: Monospace
+    # OverpassMono Nerd Font
 #    family: noto mono
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -140,7 +143,7 @@ colors:
     yellow:  '0xffdd4d'
     blue:    '0x60c4ff'
     magenta: '0xd160a0'
-    cyan:    '0xffba6d'
+    cyan:    '0xffc299'
     white:   '0xe0e0e0'
 
   # Bright colors
