@@ -1,0 +1,292 @@
+[extension]
+
+## image formats
+bmp = [
+	{ command = "qimgv", fork = true, silent = true },
+	{ command = "krita", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true } ]
+gif = [
+	{ command = "qimgv", fork = true, silent = true },
+	{ command = "krita", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true } ]
+jpeg = [
+	{ command = "qimgv", fork = true, silent = true },
+	{ command = "krita", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "wl-jcopy.sh" },
+	{ command = "ruiji", args = [ "-T" ], confirm_exit = true } ]
+jpg = [
+	{ command = "qimgv", fork = true, silent = true },
+	{ command = "krita", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "wl-jcopy.sh" },
+	{ command = "ruiji", args = [ "-T" ], confirm_exit = true } ]
+ppm = [
+	{ command = "qimgv", fork = true, silent = true },
+	{ command = "krita", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "ruiji", args = [ "-T" ], confirm_exit = true } ]
+png = [
+	{ command = "qimgv", fork = true, silent = true },
+	{ command = "krita", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "wl-jcopy.sh" },
+	{ command = "ruiji", args = [ "-T" ], confirm_exit = true } ]
+svg = [
+	{ command = "inkview", fork = true, silent = true },
+	{ command = "inkscape", fork = true, silent = true } ]
+tiff = [
+	{ command = "qimgv", fork = true, silent = true },
+	{ command = "krita", fork = true, silent = true } ]
+
+## audio formats
+flac = [
+	{ command = "mpv" },
+	{ command = "mediainfo", confirm_exit = true } ]
+m4a = [
+	{ command = "mpv" },
+	{ command = "mediainfo", confirm_exit = true } ]
+mp3 = [
+	{ command = "mpv" },
+	{ command = "mediainfo", confirm_exit = true } ]
+ogg = [
+	{ command = "mpv" },
+	{ command = "mediainfo", confirm_exit = true } ]
+wav = [
+	{ command = "mpv" },
+	{ command = "mediainfo", confirm_exit = true } ]
+ts = [
+	{ command = "mpv", fork = true, silent = true },
+	{ command = "mpv" },
+	{ command = "mediainfo", confirm_exit = true } ]
+
+## video formats
+avi = [
+	{ command = "mpv", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+av1 = [
+	{ command = "mpv", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+flv = [
+	{ command = "mpv", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+mkv = [
+	{ command = "mpv", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+mov = [
+	{ command = "mpv", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+mp4 = [
+	{ command = "mpv", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+webm = [
+	{ command = "mpv", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+wmv = [
+	{ command = "mpv", fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+
+## text formats
+build = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+c = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+cmake = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+conf = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+cpp = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+css = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+csv = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+eex = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+ex = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+exs = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+go = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+h = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+hpp = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+hs = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+html = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+ini = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+java = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+js = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+json = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+kt = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+log = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+md = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+ninja = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+py = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+rs = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+scss = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+sh = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+srt = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+svelte = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+toml = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+tsx = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+txt = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+xml = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+yml = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+
+# archive formats
+7z = [
+	{ command = "7z", args = [ "x" ], confirm_exit = true },
+	{ command = "file-roller", fork = true, silent = true } ]
+bz2 = [
+	{ command = "tar", args = [ "-xvjf" ], confirm_exit = true },
+	{ command = "file-roller", fork = true, silent = true } ]
+gz = [
+	{ command = "tar", args = [ "-xvzf" ], confirm_exit = true },
+	{ command = "file-roller", fork = true, silent = true } ]
+tar = [
+	{ command = "tar", args = [ "-xvf" ], confirm_exit = true },
+	{ command = "file-roller", fork = true, silent = true } ]
+tgz = [
+	{ command = "tar", args = [ "-xvzf" ], confirm_exit = true },
+	{ command = "file-roller", fork = true, silent = true } ]
+rar = [
+	{ command = "unrar", args = [ "e" ], confirm_exit = true },
+	{ command = "file-roller", fork = true, silent = true } ]
+xz = [
+	{ command = "tar", args = [ "-xvJf" ], confirm_exit = true },
+	{ command = "file-roller", fork = true, silent = true } ]
+zip = [
+	{ command = "unzip", confirm_exit = true },
+	{ command = "file-roller", fork = true, silent = true } ]
+
+# misc formats
+aup = [
+	{ command = "audacity", fork = true, silent = true } ]
+
+m3u = [
+	{ command = "nvim" },
+	{ command = "mpv" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+docx = [
+	{ command = "libreoffice", fork = true, silent = true } ]
+odt = [
+	{ command = "libreoffice", fork = true, silent = true } ]
+odf = [
+	{ command = "libreoffice", fork = true, silent = true } ]
+pdf = [
+	{ command = "evince", fork = true, silent = true } ]
+
+tex = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true },
+	{ command = "pdflatex" } ]
+
+torrent = [
+	{ command = "transmission-gtk" } ]
+
+[mimetype]
+text = [
+	{ command = "nvim" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]

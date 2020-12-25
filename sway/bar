@@ -1,0 +1,24 @@
+font noto sans 13
+
+bar {
+	id 0
+	swaybar_command swaybar
+	status_command /usr/local/bin/dwmstatus_std
+	position top
+	height 32
+	strip_workspace_name yes
+	wrap_scroll no
+	modifier Mod1
+#	mode hide
+	colors {
+		statusline #ffffff
+		background #0c131acf
+
+		inactive_workspace	#0C131ACF       #0C131ACF       #FFFFFF
+		active_workspace	#1C2027		#1C2027		#1C2027
+		focused_workspace	#AD1457		#AD1457		#FFFFFF
+#	       focused_workspace #006f9b #00363A #fffff
+	}
+#       font terminus mono 14
+	font droid sans mono 16
+}

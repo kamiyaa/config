@@ -1,0 +1,210 @@
+[keymaps]
+# backspace = 263
+
+[[mapcommand]]
+command = "new_tab"
+keys = [ "T" ]
+
+[[mapcommand]]
+command = "new_tab"
+keys = [ "ctrl+t" ]
+[[mapcommand]]
+command = "close_tab"
+keys = [ "W" ]
+[[mapcommand]]
+command = "close_tab"
+keys = [ "ctrl+w" ]
+[[mapcommand]]
+command = "close_tab"
+keys = [ "q" ]
+
+[[mapcommand]]
+command = "reload_dir_list"
+keys = [ "R" ]
+[[mapcommand]]
+command = "toggle_hidden"
+keys = [ "z", "h" ]
+
+[[mapcommand]]
+command = "tab_switch 1"
+keys = [ "\t" ]
+[[mapcommand]]
+command = "tab_switch -1"
+keys = [ "backtab" ]
+
+[[mapcommand]]
+command = "cursor_move_up"
+keys = [ "up" ]
+[[mapcommand]]
+command = "cursor_move_down"
+keys = [ "down" ]
+[[mapcommand]]
+command = "cursor_move_end"
+keys = [ "end" ]
+[[mapcommand]]
+command = "cursor_move_home"
+keys = [ "home" ]
+[[mapcommand]]
+command = "cursor_move_page_up"
+keys = [ "page_up" ]
+[[mapcommand]]
+command = "cursor_move_page_down"
+keys = [ "page_down" ]
+
+[[mapcommand]]
+command = "parent_cursor_move_up"
+keys = [ "[" ]
+[[mapcommand]]
+command = "parent_cursor_move_down"
+keys = [ "]" ]
+
+
+[[mapcommand]]
+command = "open_file"
+keys = [ "right" ]
+[[mapcommand]]
+command = "open_file"
+keys = [ "\n" ]
+[[mapcommand]]
+command = "open_file_with"
+keys = [ "r" ]
+
+[[mapcommand]]
+command = "console cd"
+keys = [ "c", "d" ]
+[[mapcommand]]
+command = "cd .."
+keys = [ "left" ]
+[[mapcommand]]
+command = "cd .."
+keys = [ "h" ]
+
+[[mapcommand]]
+command = "cut_files"
+keys = [ "d", "d" ]
+[[mapcommand]]
+command = "copy_files"
+keys = [ "y", "y" ]
+# [[mapcommand]]
+# command = "open_file_with wl-jcopy.sh"
+# keys = [ "y", "Y" ]
+[[mapcommand]]
+command = "paste_files"
+keys = [ "p", "p" ]
+[[mapcommand]]
+command = "paste_files --overwrite"
+keys = [ "p", "o" ]
+[[mapcommand]]
+command = "delete_files"
+keys = [ "d", "D" ]
+[[mapcommand]]
+command = "delete_files"
+keys = [ "delete" ]
+
+[[mapcommand]]
+command = "rename_append"
+keys = [ "a" ]
+[[mapcommand]]
+command = "rename_prepend"
+keys = [ "A" ]
+
+[[mapcommand]]
+command = "select_files --toggle"
+keys = [ " " ]
+[[mapcommand]]
+command = "select_files --toggle --all"
+keys = [ "t" ]
+
+[[mapcommand]]
+command = "show_workers"
+keys = [ "w" ]
+
+[[mapcommand]]
+command = "bulk_rename"
+keys = [ "b", "b" ]
+[[mapcommand]]
+command = "set_mode"
+keys = [ "=" ]
+
+[[mapcommand]]
+command = "console"
+keys = [ ";" ]
+[[mapcommand]]
+command = "console shell "
+keys = [ ":" ]
+[[mapcommand]]
+command = "console mkdir "
+keys = [ "m", "k" ]
+[[mapcommand]]
+command = "console rename "
+keys = [ "c", "w" ]
+
+[[mapcommand]]
+command = "console search "
+keys = [ "/" ]
+[[mapcommand]]
+command = "search_next"
+keys = [ "n" ]
+[[mapcommand]]
+command = "search_prev"
+keys = [ "N" ]
+
+[[mapcommand]]
+command = "sort reverse"
+keys = [ "s", "r" ]
+[[mapcommand]]
+command = "sort lexical"
+keys = [ "s", "l" ]
+[[mapcommand]]
+command = "sort mtime"
+keys = [ "s", "m" ]
+[[mapcommand]]
+command = "sort natural"
+keys = [ "s", "n" ]
+[[mapcommand]]
+command = "sort size"
+keys = [ "s", "s" ]
+
+[[mapcommand]]
+command = "cd /"
+keys = [ "g", "r" ]
+[[mapcommand]]
+command = "cd /etc"
+keys = [ "g", "e" ]
+
+[[mapcommand]]
+command = "cd /home/shana"
+keys = [ "g", "h" ]
+[[mapcommand]]
+command = "cd /home/shana/Downloads"
+keys = [ "g", "d" ]
+[[mapcommand]]
+command = "cd /home/shana/Pictures"
+keys = [ "g", "P" ]
+[[mapcommand]]
+command = "cd /home/shana/pictures"
+keys = [ "g", "p" ]
+[[mapcommand]]
+command = "cd /home/shana/videos"
+keys = [ "g", "v" ]
+[[mapcommand]]
+command = "cd /home/shana/documents/utsc"
+keys = [ "g", "u" ]
+[[mapcommand]]
+command = "cd /home/shana/builds"
+keys = [ "g", "b" ]
+[[mapcommand]]
+command = "cd /home/shana/.config"
+keys = [ "g", "c" ]
+[[mapcommand]]
+command = "cd /home/shana/music"
+keys = [ "g", "M" ]
+[[mapcommand]]
+command = "cd /home/shana/youtube"
+keys = [ "g", "y" ]
+[[mapcommand]]
+command = "cd /tmp/shana"
+keys = [ "g", "t" ]
+[[mapcommand]]
+command = "cd /run/media/shana"
+keys = [ "g", "m" ]

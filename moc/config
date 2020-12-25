@@ -1,0 +1,97 @@
+# Choose a keymap file (relative to '~/.moc/' or using an absolute path).
+# An annotated example keymap file is included ('keymap.example').
+#Example:    Keymap = my_keymap
+Keymap = /home/shana/.moc/keymap
+
+# Default music directory
+MusicDir = "/home/shana/music/"
+
+# Theme file to use.
+Theme = /home/shana/.moc/kamiyaa
+# The theme used when running on an xterm
+# XTermTheme = /home/shana/.moc/shana
+
+# Start in the music directory by default
+StartInMusicDir = yes
+
+# Set playback toggles.
+Repeat = yes
+Shuffle = no
+AutoNext = yes
+
+# How to sort?  FileName is the option's only value for now.
+Sort = FileName
+
+# Show files with dot at the beginning?
+ShowHiddenFiles = no
+
+# Hide file name extensions?
+HideFileExtension = no
+
+# Show file format in menu?
+ShowFormat = yes
+
+# Show file time in menu?  Possible values: 'yes', 'no' and 'IfAvailable'
+# (meaning show the time only when it is already known, which often works
+# faster).
+ShowTime = IfAvailable
+
+# Show time played as a percentage in the time progress bar.
+ShowTimePercent = no
+
+# Set the terminal title when running under xterm.
+SetXtermTitle = no
+
+# Set the terminal title when running under screen.
+SetScreenTitle = no
+
+# Use ASCII rather than graphic characters for drawing lines.  This
+# helps on some terminals.
+ASCIILines = no
+
+# FastDirs, these allow you to jump directly to a directory, the key
+# bindings are in the keymap file.
+#
+# Examples:   Fastdir1 = /mp3/rock
+#             Fastdir2 = /mp3/electronic
+#             Fastdir3 = /mp3/rap
+#             Fastdir4 = /mp3/etc
+#
+Fastdir1 = /home/shana/music/osts/breakdancing
+#Fastdir2 =
+#Fastdir3 =
+#Fastdir4 =
+#Fastdir5 =
+#Fastdir6 =
+#Fastdir7 =
+#Fastdir8 =
+#Fastdir9 =
+#Fastdir10 =
+
+# Run the OnSongChange command when a new song starts playing.
+# Specify the full path (i.e. no leading '~') of an executable to run.
+# Arguments will be passed, and you can use the following escapes:
+#
+#     %a artist
+#     %r album
+#     %f filename
+#     %t title
+#     %n track
+#     %d file duration in XX:YY form
+#     %D file duration, number of seconds
+#
+# No pipes/redirects can be used directly, but writing a shell script
+# can do the job.
+#
+# Example:    OnSongChange = "/home/jack/.moc/myscript %a %r"
+#
+OnSongChange = /home/shana/.config/moc/notify-song.sh
+
+# How much to fill the input buffer before playing (in kilobytes)?
+# This can't be greater than the value of InputBuffer.  While this has
+# a positive effect for network streams, it also causes the broadcast
+# audio to be delayed.
+#Prebuffering = 64
+
+# Display full paths instead of just file names in the playlist.
+#PlaylistFullPaths = yes

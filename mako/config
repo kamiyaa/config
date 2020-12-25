@@ -1,0 +1,46 @@
+font=noto sans 18
+
+anchor=top-right
+# anchor=bottom-left
+
+layer=top
+margin=20,20,20,0
+# margin=150,20,20,0
+padding=12
+
+default-timeout=10000
+
+ignore-timeout=1
+
+height=500
+width=400
+
+max-visible=5
+
+# Dark theme
+background-color=#2E3436d0
+text-color=#ffffffff
+# Light theme
+# background-color=#f0f0f0f0
+# text-color=#2E3436ff
+
+# border
+border-size=0
+border-radius=24
+border-color=#FFBA6Dd0
+
+# group-by=group-index
+
+# [app-name="alsanotify" grouped=true group-index=12]
+
+# background-color=#1D2F40E0
+# anchor=top-center
+# anchor=top-right
+# anchor=bottom-right
+# text-color=#1D2F40FF
+# background-color=#F0F0F0E0
+# background-color=#263238E0
+# border-color=#009688DD
+# border-color=#546E7ADD
+# border-color=#546E7ADD
+# border-color=#434F5ADD
