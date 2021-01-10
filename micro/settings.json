@@ -1,0 +1,38 @@
+{
+    "*.go": {
+        "tabsize": 4,
+        "tabstospaces": true
+    },
+    "*.html": {
+        "tabsize": 4,
+        "tabstospaces": true
+    },
+    "*.json": {
+        "tabsize": 4,
+        "tabstospaces": true
+    },
+    "*.md": {
+        "tabsize": 4,
+        "tabstospaces": true
+    },
+    "*.py": {
+        "tabsize": 4,
+        "tabstospaces": true
+    },
+    "*.rs": {
+        "tabsize": 4,
+        "tabstospaces": true
+    },
+    "autoclose": false,
+    "autoindent": false,
+    "colorscheme": "kamiyaa",
+    "ignorecase": false,
+    "pluginchannels": [
+        "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
+    ],
+    "pluginrepos": [],
+    "scrollbar": true,
+    "smartpaste": false,
+    "softwrap": true,
+    "tabsize": 8
+}
