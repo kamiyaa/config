@@ -1,9 +1,21 @@
 {
+    "*.ex": {
+        "tabsize": 2,
+        "tabstospaces": true
+    },
+    "*.exs": {
+        "tabsize": 2,
+        "tabstospaces": true
+    },
     "*.go": {
         "tabsize": 4,
         "tabstospaces": true
     },
     "*.html": {
+        "tabsize": 4,
+        "tabstospaces": true
+    },
+    "*.js": {
         "tabsize": 4,
         "tabstospaces": true
     },
@@ -27,12 +39,14 @@
     "autoindent": false,
     "colorscheme": "kamiyaa",
     "ignorecase": false,
+    "linter": false,
     "pluginchannels": [
         "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
     ],
     "pluginrepos": [],
+    "rmtrailingws": true,
+    "savecursor": true,
     "scrollbar": true,
     "smartpaste": false,
-    "softwrap": true,
     "tabsize": 8
 }

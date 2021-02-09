@@ -1,6 +1,7 @@
-font=noto sans 18
+font=cantarell 18
 
 anchor=top-right
+# anchor=bottom-right
 # anchor=bottom-left
 
 layer=top
@@ -18,7 +19,8 @@ width=400
 max-visible=5
 
 # Dark theme
-background-color=#2E3436d0
+background-color=#2E2634ff
+# background-color=#2E3436d0
 text-color=#ffffffff
 # Light theme
 # background-color=#f0f0f0f0
@@ -26,7 +28,7 @@ text-color=#ffffffff
 
 # border
 border-size=0
-border-radius=24
+border-radius=12
 border-color=#FFBA6Dd0
 
 # group-by=group-index

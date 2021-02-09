@@ -17,6 +17,9 @@ keys = [ "ctrl+w" ]
 [[mapcommand]]
 command = "close_tab"
 keys = [ "q" ]
+[[mapcommand]]
+command = "close_tab"
+keys = [ "ctrl+q" ]
 
 [[mapcommand]]
 command = "reload_dir_list"
@@ -85,9 +88,9 @@ keys = [ "d", "d" ]
 [[mapcommand]]
 command = "copy_files"
 keys = [ "y", "y" ]
-# [[mapcommand]]
-# command = "open_file_with wl-jcopy.sh"
-# keys = [ "y", "Y" ]
+[[mapcommand]]
+command = "copy_filename"
+keys = [ "y", "n" ]
 [[mapcommand]]
 command = "paste_files"
 keys = [ "p", "p" ]
@@ -173,38 +176,32 @@ command = "cd /etc"
 keys = [ "g", "e" ]
 
 [[mapcommand]]
-command = "cd /home/shana"
+command = "cd ~/"
 keys = [ "g", "h" ]
 [[mapcommand]]
-command = "cd /home/shana/Downloads"
+command = "cd ~/Downloads"
 keys = [ "g", "d" ]
 [[mapcommand]]
-command = "cd /home/shana/Pictures"
+command = "cd ~/Pictures"
 keys = [ "g", "P" ]
 [[mapcommand]]
-command = "cd /home/shana/pictures"
+command = "cd ~/pictures"
 keys = [ "g", "p" ]
 [[mapcommand]]
-command = "cd /home/shana/videos"
+command = "cd ~/videos"
 keys = [ "g", "v" ]
 [[mapcommand]]
-command = "cd /home/shana/documents/utsc"
-keys = [ "g", "u" ]
-[[mapcommand]]
-command = "cd /home/shana/builds"
+command = "cd ~/builds"
 keys = [ "g", "b" ]
 [[mapcommand]]
-command = "cd /home/shana/.config"
+command = "cd ~/.config"
 keys = [ "g", "c" ]
 [[mapcommand]]
-command = "cd /home/shana/music"
+command = "cd ~/music"
 keys = [ "g", "M" ]
 [[mapcommand]]
-command = "cd /home/shana/youtube"
+command = "cd ~/youtube"
 keys = [ "g", "y" ]
 [[mapcommand]]
-command = "cd /tmp/shana"
+command = "cd /tmp/kamiyaa"
 keys = [ "g", "t" ]
-[[mapcommand]]
-command = "cd /run/media/shana"
-keys = [ "g", "m" ]

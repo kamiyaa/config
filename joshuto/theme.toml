@@ -17,7 +17,7 @@ fg = "light_blue"
 bold = true
 
 [link]
-fg = "light_cyan"
+fg = "cyan"
 bold = true
 
 [socket]
@@ -28,9 +28,13 @@ bold = true
 
 [ext.bmp]
 fg = "yellow"
+[ext.heic]
+fg = "yellow"
 [ext.jpg]
 fg = "yellow"
 [ext.jpeg]
+fg = "yellow"
+[ext.pgm]
 fg = "yellow"
 [ext.png]
 fg = "yellow"

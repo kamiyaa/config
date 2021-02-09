@@ -1,7 +1,7 @@
 # Kamiyaa color scheme
 color-link default "#F8F8F8,#141414"
 color-link color-column "#1B1B1B"
-color-link comment "#5F5A60"
+color-link comment "#727D55" # A3AD86
 color-link constant "#CF6A4C"
 color-link constant.number "#CF6A4C"
 color-link constant.specialChar "#DDF2A4"
