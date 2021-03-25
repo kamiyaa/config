@@ -12,10 +12,10 @@ use_trash = false
 max_preview_size = 2097152 # 2MB
 
 # lexical, mtime, natural
-sort_method = "natural"
+sort_method = "lexical"
 
 [sort_option]
-show_icons = true
+show_icons = false
 show_hidden = false
 case_sensitive = false
 reverse = false

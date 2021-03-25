@@ -27,9 +27,9 @@ text-color=#ffffffff
 # text-color=#2E3436ff
 
 # border
-border-size=0
+border-size=2
 border-radius=12
-border-color=#FFBA6Dd0
+border-color=#FFBA6Dff
 
 # group-by=group-index
 

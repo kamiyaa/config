@@ -143,6 +143,10 @@ eex = [
 	{ command = "micro" },
 	{ command = "gedit", fork = true, silent = true },
 	{ command = "bat", confirm_exit = true } ]
+env = [
+	{ command = "micro" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
 ex = [
 	{ command = "micro" },
 	{ command = "gedit", fork = true, silent = true },
