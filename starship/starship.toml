@@ -1,0 +1,78 @@
+add_newline = true
+
+scan_timeout = 0
+
+format="""
+$username\
+$hostname\
+$kubernetes\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$ruby\
+$rust\
+$swift\
+$terraform\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$crystal\
+$custom\
+$cmd_duration\
+$line_break\
+$jobs\
+$character"""
+
+[directory]
+truncation_length = 0
+truncate_to_repo = true
+read_only = " ro"
+
+[username]
+style_user = "bold green"
+show_always = true
+format = "[$user]($style) "
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[python]
+symbol = "Python "
+disabled = true
+
+[rust]
+symbol = "Rust "
+
+[nodejs]
+symbol = "Nodejs "
+
+[battery]
+disabled = true
