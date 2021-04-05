@@ -4,7 +4,7 @@
 set $mod Mod1
 # set $term gnome-terminal
 set $term alacritty
-set $altterm st
+set $altterm lxterminal
 
 set $menu dmenu_run -l 4
 set $fm spacefm
@@ -28,23 +28,24 @@ bindsym $mod+F5 exec arclight -i intel_backlight -d 5
 bindsym $mod+F6 exec arclight -i intel_backlight -u 5
 
 # audio
-bindsym $mod+F1 exec amixer -q set Master toggle
-bindsym XF86AudioMute exec amixer -q set Master toggle
-bindsym XF86AudioMicMute exec amixer -q set Capture toggle
+bindsym $mod+F1 exec pamixer_notify.sh -t
+bindsym XF86AudioMute exec pamixer_notify.sh -t
+bindsym XF86AudioMicMute exec pamixer_notify.sh --source 69 -t
 
 ## +2% -2%
-bindsym XF86AudioRaiseVolume exec alsanotify -c 2
-bindsym XF86AudioLowerVolume exec alsanotify -c -2
+bindsym XF86AudioRaiseVolume exec pamixer_notify.sh -i 2
+bindsym XF86AudioLowerVolume exec pamixer_notify.sh -d 2
 ## +5% -5%
-bindsym $mod+F3 exec alsanotify -c 5
-bindsym $mod+F2 exec alsanotify -c -5
-
-## show alsamixer
-bindsym $mod+a exec st -e alsamixer
+bindsym $mod+F11 exec pamixer_notify.sh -d 5
+bindsym $mod+F12 exec pamixer_notify.sh -i 5
+bindsym $mod+F2 exec pamixer_notify.sh -d 5
+bindsym $mod+F3 exec pamixer_notify.sh -i 5
+bindsym $mod+a exec notify-send Volume "$(pamixer --get-volume-human)"
 
 # screenshot
-bindsym $mod+Print exec grim_auto /tmp/$USER
-bindsym $mod+Shift+Print exec swappy_interactive
+bindsym $mod+Print exec grim_auto.sh
+bindsym $mod+Shift+Print exec swappy_interactive.sh
+bindsym $mod+s exec qimgv "/tmp/$USER"
 
 # mocp
 bindsym $mod+minus exec mocp_toggle.sh
@@ -56,13 +57,10 @@ bindsym XF86AudioPrev exec mocp -r
 bindsym XF86AudioNext exec mocp -f
 
 # misc
-bindsym $mod+F11 exec alsanotify -c -2
-bindsym $mod+F12 exec alsanotify -c 2
 
 bindsym $mod+F4 exec ~/.bin/dmenu_emoji.sh
 # ~/.bin/dmenu_bookmarks.sh
 
-bindsym $mod+s exec qimgv "/tmp/$USER"
 # bindsym $mod+b bar 0 hide
 
 # terminal

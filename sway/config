@@ -1,6 +1,6 @@
 include bar.conf
 include devices.conf
-include keybindings.conf
+include keybindings.py
 include startup.conf
 
 ## Settings
