@@ -49,7 +49,16 @@
         "tabsize": 2,
         "tabstospaces": true
     },
+    "*.ron": {
+        "filetype": "rust",
+        "tabsize": 4,
+        "tabstospaces": true
+    },
     "*.rs": {
+        "tabsize": 4,
+        "tabstospaces": true
+    },
+    "*.svelte": {
         "tabsize": 4,
         "tabstospaces": true
     },

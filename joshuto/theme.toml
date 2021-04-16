@@ -57,6 +57,8 @@ fg = "magenta"
 fg = "magenta"
 [ext.mov]
 fg = "magenta"
+[ext.m4v]
+fg = "magenta"
 [ext.mp4]
 fg = "magenta"
 [ext.mkv]

@@ -40,7 +40,7 @@ bindsym $mod+F11 exec pamixer_notify.sh -d 5
 bindsym $mod+F12 exec pamixer_notify.sh -i 5
 bindsym $mod+F2 exec pamixer_notify.sh -d 5
 bindsym $mod+F3 exec pamixer_notify.sh -i 5
-bindsym $mod+a exec notify-send Volume "$(pamixer --get-volume-human)"
+bindsym $mod+a exec st -e alsamixer
 
 # screenshot
 bindsym $mod+Print exec grim_auto.sh

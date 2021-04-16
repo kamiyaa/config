@@ -18,5 +18,5 @@ sort_method = "lexical"
 show_icons = false
 show_hidden = false
 case_sensitive = false
-reverse = false
 directories_first = true
+reverse = false

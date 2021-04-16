@@ -55,11 +55,18 @@ command = "cursor_move_page_down"
 keys = [ "page_down" ]
 
 [[mapcommand]]
-command = "parent_cursor_move_up"
-keys = [ "[" ]
+command = "cursor_move_up"
+keys = [ "k" ]
 [[mapcommand]]
-command = "parent_cursor_move_down"
-keys = [ "]" ]
+command = "cursor_move_down"
+keys = [ "j" ]
+
+#[[mapcommand]]
+#command = "parent_cursor_move_up"
+#keys = [ "[" ]
+#[[mapcommand]]
+#command = "parent_cursor_move_down"
+#keys = [ "]" ]
 
 
 [[mapcommand]]
