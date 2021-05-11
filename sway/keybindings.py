@@ -6,55 +6,58 @@ set $mod Mod1
 set $term alacritty
 set $altterm lxterminal
 
-set $menu dmenu_run -l 4
+set $menu dmenu_run.sh
 set $fm spacefm
 set $browser firefox-wayland
 set $alt_browser google-chrome-stable --force-device-scale-factor=1.1
+
+set $laptop-display     'eDP-1'
+set $hdmi-diplay        'HDMI-A-1'
 
 ##############
 # Keybindings
 ##############
 # dpms
-bindsym $mod+z exec swaymsg 'output eDP-1 dpms on'
-bindsym $mod+Shift+z exec swaymsg 'output eDP-1 dpms off'
+bindsym $mod+z              exec swaymsg "output $laptop-display dpms on"
+bindsym $mod+Shift+z        exec swaymsg "output $laptop-display dpms off"
 
-bindsym $mod+slash exec swaymsg 'output HDMI-A-1 dpms on'
-bindsym $mod+Shift+slash exec swaymsg 'output HDMI-A-1 dpms off'
+bindsym $mod+slash          exec swaymsg "output $hdmi-diplay dpms on"
+bindsym $mod+Shift+slash    exec swaymsg "output $hdmi-diplay dpms off"
 
 # brightness
-bindsym XF86MonBrightnessDown exec arclight -i intel_backlight -d 5
-bindsym XF86MonBrightnessUp exec arclight -i intel_backlight -u 5
-bindsym $mod+F5 exec arclight -i intel_backlight -d 5
-bindsym $mod+F6 exec arclight -i intel_backlight -u 5
+bindsym XF86MonBrightnessDown   exec arclight -i intel_backlight -d 5
+bindsym XF86MonBrightnessUp     exec arclight -i intel_backlight -u 5
+bindsym $mod+F5                 exec arclight -i intel_backlight -d 5
+bindsym $mod+F6                 exec arclight -i intel_backlight -u 5
 
 # audio
-bindsym $mod+F1 exec pamixer_notify.sh -t
-bindsym XF86AudioMute exec pamixer_notify.sh -t
-bindsym XF86AudioMicMute exec pamixer_notify.sh --source 69 -t
+bindsym $mod+F1                 exec pamixer_notify.sh -t
+bindsym XF86AudioMute           exec pamixer_notify.sh -t
+bindsym XF86AudioMicMute        exec pamixer_notify.sh --source 69 -t
 
 ## +2% -2%
-bindsym XF86AudioRaiseVolume exec pamixer_notify.sh -i 2
-bindsym XF86AudioLowerVolume exec pamixer_notify.sh -d 2
+bindsym XF86AudioRaiseVolume    exec pamixer_notify.sh -i 2
+bindsym XF86AudioLowerVolume    exec pamixer_notify.sh -d 2
 ## +5% -5%
-bindsym $mod+F11 exec pamixer_notify.sh -d 5
-bindsym $mod+F12 exec pamixer_notify.sh -i 5
-bindsym $mod+F2 exec pamixer_notify.sh -d 5
-bindsym $mod+F3 exec pamixer_notify.sh -i 5
-bindsym $mod+a exec st -e alsamixer
+bindsym $mod+F11                exec pamixer_notify.sh -d 5
+bindsym $mod+F12                exec pamixer_notify.sh -i 5
+bindsym $mod+F2                 exec pamixer_notify.sh -d 5
+bindsym $mod+F3                 exec pamixer_notify.sh -i 5
+bindsym $mod+a                  exec st -e alsamixer
 
 # screenshot
-bindsym $mod+Print exec grim_auto.sh
-bindsym $mod+Shift+Print exec swappy_interactive.sh
-bindsym $mod+s exec qimgv "/tmp/$USER"
+bindsym $mod+Print          exec grim_auto.sh
+bindsym $mod+Shift+Print    exec swappy_interactive.sh
+bindsym $mod+s              exec qimgv "/tmp/$USER"
 
 # mocp
-bindsym $mod+minus exec mocp_toggle.sh
-bindsym $mod+equal exec mocp_exit.sh
-bindsym $mod+bracketleft exec mocp -r
-bindsym $mod+bracketright exec mocp -f
-bindsym XF86AudioPlay exec mocp_toggle.sh
-bindsym XF86AudioPrev exec mocp -r
-bindsym XF86AudioNext exec mocp -f
+bindsym $mod+minus          exec mocp_toggle.sh
+bindsym $mod+equal          exec mocp_exit.sh
+bindsym $mod+bracketleft    exec mocp -r
+bindsym $mod+bracketright   exec mocp -f
+bindsym XF86AudioPlay       exec mocp_toggle.sh
+bindsym XF86AudioPrev       exec mocp -r
+bindsym XF86AudioNext       exec mocp -f
 
 # misc
 
@@ -77,11 +80,11 @@ bindsym $mod+p exec $menu
 bindsym $mod+i mode "c: chinese; j: japanese; e: english; esc: english"
 
 mode "c: chinese; j: japanese; e: english; esc: english" {
-	bindsym c exec ibus engine libpinyin; mode "default"
-	bindsym j exec ibus engine libpinyin; mode "default"
-	bindsym e exec ibus engine xkb:us::eng; mode "default"
-	bindsym Return exec ibus engine xkb:us::eng; mode "default"
-	bindsym Escape exec ibus engine xkb:us::eng; mode "default"
+	bindsym c       exec ibus engine libpinyin;     mode "default"
+	bindsym j       exec ibus engine libpinyin;     mode "default"
+	bindsym e       exec ibus engine xkb:us::eng;   mode "default"
+	bindsym Return  exec ibus engine xkb:us::eng;   mode "default"
+	bindsym Escape  exec ibus engine xkb:us::eng;   mode "default"
 }
 
 # Drag floating windows by holding down $mod and left mouse button.
@@ -103,51 +106,51 @@ bindsym $mod+Shift+q exit
 bindsym $mod+Ctrl+Backspace exec shutdown.sh
 
 # Move your focus around with $mod+[h|j|k|l], like vim
-bindsym $mod+Shift+backslash focus up
-bindsym $mod+backslash focus down
-bindsym $mod+Shift+Tab focus left
-bindsym $mod+Tab focus right
+bindsym $mod+Shift+backslash    focus up
+bindsym $mod+backslash          focus down
+bindsym $mod+Shift+Tab          focus left
+bindsym $mod+Tab focus          right
 #bindsym $mod+k focus up
 #bindsym $mod+j focus down
 #bindsym $mod+h focus left
 #bindsym $mod+l focus right
 
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+Left     move left
+bindsym $mod+Shift+Down     move down
+bindsym $mod+Shift+Up       move up
+bindsym $mod+Shift+Right    move right
 
-bindsym $mod+comma resize shrink width 5
-bindsym $mod+period resize grow width 5
+bindsym $mod+comma          resize shrink width 5
+bindsym $mod+period         resize grow width 5
 
 
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
+bindsym $mod+1  workspace 1
+bindsym $mod+2  workspace 2
+bindsym $mod+3  workspace 3
+bindsym $mod+4  workspace 4
+bindsym $mod+5  workspace 5
+bindsym $mod+6  workspace 6
+bindsym $mod+7  workspace 7
+bindsym $mod+8  workspace 8
+bindsym $mod+9  workspace 9
 
 #	bindsym $mod+0 workspace 10
 # move focused container to workspace
-bindsym $mod+Shift+1 move window to workspace 1
-bindsym $mod+Shift+2 move window to workspace 2
-bindsym $mod+Shift+3 move window to workspace 3
-bindsym $mod+Shift+4 move window to workspace 4
-bindsym $mod+Shift+5 move window to workspace 5
-bindsym $mod+Shift+6 move window to workspace 6
-bindsym $mod+Shift+7 move window to workspace 7
-bindsym $mod+Shift+8 move window to workspace 8
-bindsym $mod+Shift+9 move window to workspace 9
-bindsym $mod+Shift+0 sticky toggle
+bindsym $mod+Shift+1    move window to workspace 1
+bindsym $mod+Shift+2    move window to workspace 2
+bindsym $mod+Shift+3    move window to workspace 3
+bindsym $mod+Shift+4    move window to workspace 4
+bindsym $mod+Shift+5    move window to workspace 5
+bindsym $mod+Shift+6    move window to workspace 6
+bindsym $mod+Shift+7    move window to workspace 7
+bindsym $mod+Shift+8    move window to workspace 8
+bindsym $mod+Shift+9    move window to workspace 9
+bindsym $mod+Shift+0    sticky toggle
 
 # Switch the current container between different layout styles
-bindsym $mod+t layout toggle split
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout stacking
+bindsym $mod+t          layout toggle split
+bindsym $mod+w          layout tabbed
+bindsym $mod+Shift+w    layout stacking
 
 # Make the current focus fullscreen
 bindsym $mod+m fullscreen
@@ -159,12 +162,6 @@ bindsym $mod+Shift+space floating toggle
 # bindsym $mod+Return focus parent
 
 # include /etc/sway/config.d/*
-
-# screen idle
-#exec swayidle \
-#	timeout 600 'swaymsg "output * dpms off"' \
-#	resume 'swaymsg "output * dpms on"' \
-
 
 	# bindsym $mod+z exec swaymsg 'output eDP-1 dpms on'
 	#	bindsym $mod+Shift+z exec swaymsg "output * dpms off"

@@ -1,9 +1,15 @@
 set $bg_1 /home/kamiyaa/wallpapers/Anime_Scenery_046-001.png
 
-output * bg $bg_1 fill
-
-output HDMI-A-1 resolution 1920x1080 position 1920,0
-output eDP-1 res 1920x1080 pos 0,0
+output "HDMI-A-1" {
+	background $bg_1 fill
+	resolution 1920x1080@60Hz
+	position 1920,0
+}
+output "eDP-1" {
+	background $bg_1 fill
+	resolution 1920x1080@60Hz
+	position 0,0
+}
 # output eDP-1 disable
 # output HDMI-A-1 layout none mirror eDP-1
 
