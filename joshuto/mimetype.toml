@@ -16,38 +16,27 @@ heic = [
 jpeg = [
 	{ command = "qimgv", fork = true, silent = true },
 	{ command = "krita", fork = true, silent = true },
-	{ command = "mediainfo", confirm_exit = true },
-	{ command = "wl-jcopy.sh" },
-	{ command = "ruiji", args = [ "-T" ], confirm_exit = true } ]
+	{ command = "mediainfo", confirm_exit = true } ]
 jpe = [
 	{ command = "qimgv", fork = true, silent = true },
 	{ command = "krita", fork = true, silent = true },
-	{ command = "mediainfo", confirm_exit = true },
-	{ command = "wl-jcopy.sh" },
-	{ command = "ruiji", args = [ "-T" ], confirm_exit = true } ]
+	{ command = "mediainfo", confirm_exit = true } ]
 jpg = [
 	{ command = "qimgv", fork = true, silent = true },
 	{ command = "krita", fork = true, silent = true },
-	{ command = "mediainfo", confirm_exit = true },
-	{ command = "wl-jcopy.sh" },
-	{ command = "ruiji", args = [ "-T" ], confirm_exit = true } ]
+	{ command = "mediainfo", confirm_exit = true } ]
 pgm = [
 	{ command = "qimgv", fork = true, silent = true },
 	{ command = "krita", fork = true, silent = true },
-	{ command = "mediainfo", confirm_exit = true },
-	{ command = "wl-jcopy.sh" },
-	{ command = "ruiji", args = [ "-T" ], confirm_exit = true } ]
+	{ command = "mediainfo", confirm_exit = true } ]
 png = [
 	{ command = "qimgv", fork = true, silent = true },
 	{ command = "krita", fork = true, silent = true },
-	{ command = "mediainfo", confirm_exit = true },
-	{ command = "wl-jcopy.sh" },
-	{ command = "ruiji", args = [ "-T" ], confirm_exit = true } ]
+	{ command = "mediainfo", confirm_exit = true } ]
 ppm = [
 	{ command = "qimgv", fork = true, silent = true },
 	{ command = "krita", fork = true, silent = true },
-	{ command = "mediainfo", confirm_exit = true },
-	{ command = "ruiji", args = [ "-T" ], confirm_exit = true } ]
+	{ command = "mediainfo", confirm_exit = true } ]
 svg = [
 	{ command = "inkview", fork = true, silent = true },
 	{ command = "inkscape", fork = true, silent = true } ]
@@ -57,62 +46,62 @@ tiff = [
 
 ## audio formats
 flac = [
-	{ command = "mpv" },
+	{ command = "mpv", args = [ "--" ] },
 	{ command = "mediainfo", confirm_exit = true } ]
 m4a = [
-	{ command = "mpv" },
+	{ command = "mpv", args = [ "--" ] },
 	{ command = "mediainfo", confirm_exit = true } ]
 mp3 = [
-	{ command = "mpv" },
+	{ command = "mpv", args = [ "--" ] },
 	{ command = "mediainfo", confirm_exit = true } ]
 ogg = [
-	{ command = "mpv" },
+	{ command = "mpv", args = [ "--" ] },
 	{ command = "mediainfo", confirm_exit = true } ]
 wav = [
-	{ command = "mpv" },
+	{ command = "mpv", args = [ "--" ] },
 	{ command = "mediainfo", confirm_exit = true } ]
 ts = [
-	{ command = "mpv", fork = true, silent = true },
+	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
 	{ command = "mpv" },
 	{ command = "mediainfo", confirm_exit = true } ]
 
 ## video formats
 avi = [
-	{ command = "mpv", fork = true, silent = true },
+	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
 	{ command = "mediainfo", confirm_exit = true },
-	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true } ]
 av1 = [
-	{ command = "mpv", fork = true, silent = true },
+	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
 	{ command = "mediainfo", confirm_exit = true },
-	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true } ]
 flv = [
-	{ command = "mpv", fork = true, silent = true },
+	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
 	{ command = "mediainfo", confirm_exit = true },
-	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true } ]
 mkv = [
-	{ command = "mpv", fork = true, silent = true },
+	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
 	{ command = "mediainfo", confirm_exit = true },
-	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true } ]
 m4v = [
-	{ command = "mpv", fork = true, silent = true },
+	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
 	{ command = "mediainfo", confirm_exit = true },
-	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true } ]
 mov = [
-	{ command = "mpv", fork = true, silent = true },
+	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
 	{ command = "mediainfo", confirm_exit = true },
-	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true } ]
 mp4 = [
-	{ command = "mpv", fork = true, silent = true },
+	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
 	{ command = "mediainfo", confirm_exit = true },
-	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true } ]
 webm = [
-	{ command = "mpv", fork = true, silent = true },
+	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
 	{ command = "mediainfo", confirm_exit = true },
-	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true } ]
 wmv = [
-	{ command = "mpv", fork = true, silent = true },
+	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
 	{ command = "mediainfo", confirm_exit = true },
-	{ command = "mpv", args = [ "--mute", "on" ], fork = true, silent = true } ]
+	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true } ]
 
 ## text formats
 build = [
@@ -215,6 +204,10 @@ md = [
 	{ command = "micro" },
 	{ command = "gedit", fork = true, silent = true },
 	{ command = "bat", confirm_exit = true } ]
+micro = [
+	{ command = "micro" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
 ninja = [
 	{ command = "micro" },
 	{ command = "gedit", fork = true, silent = true },
@@ -264,6 +257,10 @@ vim = [
 	{ command = "gedit", fork = true, silent = true },
 	{ command = "bat", confirm_exit = true } ]
 xml = [
+	{ command = "micro" },
+	{ command = "gedit", fork = true, silent = true },
+	{ command = "bat", confirm_exit = true } ]
+yaml = [
 	{ command = "micro" },
 	{ command = "gedit", fork = true, silent = true },
 	{ command = "bat", confirm_exit = true } ]
@@ -324,9 +321,3 @@ tex = [
 
 torrent = [
 	{ command = "transmission-gtk" } ]
-
-[mimetype]
-text = [
-	{ command = "micro" },
-	{ command = "gedit", fork = true, silent = true },
-	{ command = "bat", confirm_exit = true } ]

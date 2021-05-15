@@ -6,6 +6,9 @@ use_trash = false
 # currently does not work
 max_preview_size = 2097152 # 2MB
 
+[new_tab]
+cwd = "inherit"	# home
+
 [display]
 collapse_preview = true
 # ratios for parent view, current view and preview
