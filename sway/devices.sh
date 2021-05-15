@@ -9,6 +9,7 @@ output "eDP-1" {
 	background $bg_1 fill
 	resolution 1920x1080@60Hz
 	position 0,0
+	disable
 }
 # output eDP-1 disable
 # output HDMI-A-1 layout none mirror eDP-1

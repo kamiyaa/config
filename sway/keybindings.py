@@ -17,40 +17,55 @@ set $hdmi-diplay        'HDMI-A-1'
 ##############
 # Keybindings
 ##############
-# dpms
-bindsym $mod+z              exec swaymsg "output $laptop-display dpms on"
-bindsym $mod+Shift+z        exec swaymsg "output $laptop-display dpms off"
 
-bindsym $mod+slash          exec swaymsg "output $hdmi-diplay dpms on"
-bindsym $mod+Shift+slash    exec swaymsg "output $hdmi-diplay dpms off"
+## enable/disable different monitors
+bindsym $mod+F3 mode "[enable screen] 0: eDP; 1: HDMI"
+mode "[enable screen] 0: eDP; 1: HDMI" {
+    bindsym 0       exec swaymsg "output $laptop-display enable";       mode "default"
+    bindsym 1       exec swaymsg "output $hdmi-diplay enable";          mode "default"
+	bindsym Escape  mode "default"
+}
 
-# brightness
+bindsym $mod+F4 mode "[disable screen] 0: eDP; 1: HDMI"
+mode "[disable screen] 0: eDP; 1: HDMI" {
+    bindsym 0       exec swaymsg "output $laptop-display disable";      mode "default"
+    bindsym 1       exec swaymsg "output $hdmi-diplay disable";         mode "default"
+	bindsym Escape  mode "default"
+}
+
+## dpms
+bindsym $mod+z              exec swaymsg "output * dpms off"
+bindsym $mod+Shift+z        exec swaymsg "output * dpms on"
+
+# bindsym $mod+slash          exec swaymsg "output $hdmi-diplay dpms on"
+# bindsym $mod+Shift+slash    exec swaymsg "output $hdmi-diplay dpms off"
+
+## brightness
 bindsym XF86MonBrightnessDown   exec arclight -i intel_backlight -d 5
 bindsym XF86MonBrightnessUp     exec arclight -i intel_backlight -u 5
 bindsym $mod+F5                 exec arclight -i intel_backlight -d 5
 bindsym $mod+F6                 exec arclight -i intel_backlight -u 5
 
-# audio
-bindsym $mod+F1                 exec pamixer_notify.sh -t
+## audio
 bindsym XF86AudioMute           exec pamixer_notify.sh -t
 bindsym XF86AudioMicMute        exec pamixer_notify.sh --source 69 -t
 
-## +2% -2%
 bindsym XF86AudioRaiseVolume    exec pamixer_notify.sh -i 2
 bindsym XF86AudioLowerVolume    exec pamixer_notify.sh -d 2
-## +5% -5%
-bindsym $mod+F11                exec pamixer_notify.sh -d 5
 bindsym $mod+F12                exec pamixer_notify.sh -i 5
-bindsym $mod+F2                 exec pamixer_notify.sh -d 5
-bindsym $mod+F3                 exec pamixer_notify.sh -i 5
-bindsym $mod+a                  exec st -e alsamixer
+bindsym $mod+F11                exec pamixer_notify.sh -d 5
 
-# screenshot
+# bindsym $mod+F1                 exec pamixer_notify.sh -t
+# bindsym $mod+F2                 exec pamixer_notify.sh -d 5
+# bindsym $mod+F3                 exec pamixer_notify.sh -i 5
+# bindsym $mod+a                  exec st -e alsamixer
+
+## screenshot
 bindsym $mod+Print          exec grim_auto.sh
 bindsym $mod+Shift+Print    exec swappy_interactive.sh
 bindsym $mod+s              exec qimgv "/tmp/$USER"
 
-# mocp
+## mocp
 bindsym $mod+minus          exec mocp_toggle.sh
 bindsym $mod+equal          exec mocp_exit.sh
 bindsym $mod+bracketleft    exec mocp -r
@@ -59,16 +74,15 @@ bindsym XF86AudioPlay       exec mocp_toggle.sh
 bindsym XF86AudioPrev       exec mocp -r
 bindsym XF86AudioNext       exec mocp -f
 
-# misc
+## misc
 
-bindsym $mod+F4 exec ~/.bin/dmenu_emoji.sh
-# ~/.bin/dmenu_bookmarks.sh
-
-# bindsym $mod+b bar 0 hide
+### emojis
+bindsym $mod+e              exec ~/.bin/dmenu_emoji.sh
+bindsym $mod+b              exec ~/.bin/toggle_swaybar.sh 0
 
 # terminal
-bindsym $mod+Shift+Return exec $term
-bindsym $mod+Shift+apostrophe exec $altterm
+bindsym $mod+Shift+Return       exec $term
+bindsym $mod+Shift+apostrophe   exec $altterm
 
 # kill focused window
 bindsym $mod+Shift+c kill
@@ -79,7 +93,7 @@ bindsym $mod+p exec $menu
 
 bindsym $mod+i mode "c: chinese; j: japanese; e: english; esc: english"
 
-mode "c: chinese; j: japanese; e: english; esc: english" {
+mode "e: english; c: chinese; j: japanese; esc: english" {
 	bindsym c       exec ibus engine libpinyin;     mode "default"
 	bindsym j       exec ibus engine libpinyin;     mode "default"
 	bindsym e       exec ibus engine xkb:us::eng;   mode "default"
