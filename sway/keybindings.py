@@ -91,9 +91,9 @@ bindsym $mod+Shift+c kill
 bindsym $mod+p exec $menu
 # bindsym $mod+o exec rlaunch -h 40 -f 'Open Sans'
 
-bindsym $mod+i mode "c: chinese; j: japanese; e: english; esc: english"
+bindsym $mod+i mode "[lang keyboard] e: english; c: chinese; j: japanese;"
 
-mode "e: english; c: chinese; j: japanese; esc: english" {
+mode "[lang keyboard] e: english; c: chinese; j: japanese;" {
 	bindsym c       exec ibus engine libpinyin;     mode "default"
 	bindsym j       exec ibus engine libpinyin;     mode "default"
 	bindsym e       exec ibus engine xkb:us::eng;   mode "default"
