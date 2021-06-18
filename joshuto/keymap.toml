@@ -146,7 +146,7 @@ command = ":"
 keys = [ ";" ]
 [[mapcommand]]
 command = ":shell "
-keys = [ ":" ]
+keys = [ "'" ]
 [[mapcommand]]
 command = ":mkdir "
 keys = [ "m", "k" ]
@@ -160,6 +160,9 @@ keys = [ "/" ]
 [[mapcommand]]
 command = ":search_glob "
 keys = [ "\\" ]
+[[mapcommand]]
+command = "search_skim"
+keys = [ "?" ]
 [[mapcommand]]
 command = "search_next"
 keys = [ "n" ]
@@ -182,6 +185,9 @@ keys = [ "s", "n" ]
 [[mapcommand]]
 command = "sort size"
 keys = [ "s", "s" ]
+[[mapcommand]]
+command = "sort ext"
+keys = [ "s", "e" ]
 
 [[mapcommand]]
 command = "cd /"
@@ -206,6 +212,9 @@ keys = [ "g", "p" ]
 command = "cd ~/videos"
 keys = [ "g", "v" ]
 [[mapcommand]]
+command = "cd ~/documents/utsc"
+keys = [ "g", "u" ]
+[[mapcommand]]
 command = "cd ~/builds"
 keys = [ "g", "b" ]
 [[mapcommand]]
@@ -215,3 +224,11 @@ keys = [ "g", "c" ]
 command = "cd ~/music"
 keys = [ "g", "M" ]
 [[mapcommand]]
+command = "cd ~/youtube"
+keys = [ "g", "y" ]
+[[mapcommand]]
+command = "cd /tmp/kamiyaa"
+keys = [ "g", "t" ]
+[[mapcommand]]
+command = "cd /run/media/kamiyaa"
+keys = [ "g", "m" ]
