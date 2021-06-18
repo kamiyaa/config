@@ -3,12 +3,12 @@
 exec mako
 exec tsuchita-server
 exec ibus-daemon -drx
+exec dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 exec gammastep &
-exec kanshi
+# exec kanshi
 
 exec swayidle \
-	timeout 600 'swaymsg "output * dpms off"' \
-	resume 'swaymsg "output * dpms on"'
+	timeout 600 'swaymsg "output * dpms off"'
 
 #exec swayidle \
 #	timeout 900 'swaylock'

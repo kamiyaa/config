@@ -7,7 +7,7 @@ bar {
 	modifier Mod1
 	position top
 	strip_workspace_name yes
-	font droid sans mono 16
+	font droid sans mono 20
 #	gaps 0 360
 #	mode hide
 #	mode invisible

@@ -2,6 +2,7 @@
 # Variables
 ##############
 set $mod Mod1
+set $super Mod4
 # set $term gnome-terminal
 set $term alacritty
 set $altterm lxterminal
@@ -19,23 +20,30 @@ set $hdmi-diplay        'HDMI-A-1'
 ##############
 
 ## enable/disable different monitors
-bindsym $mod+F3 mode "[enable screen] 0: eDP; 1: HDMI"
+bindsym $super+Tab mode "[enable screen] 0: eDP; 1: HDMI"
 mode "[enable screen] 0: eDP; 1: HDMI" {
     bindsym 0       exec swaymsg "output $laptop-display enable";       mode "default"
     bindsym 1       exec swaymsg "output $hdmi-diplay enable";          mode "default"
 	bindsym Escape  mode "default"
 }
 
-bindsym $mod+F4 mode "[disable screen] 0: eDP; 1: HDMI"
+bindsym $super+e mode "[disable screen] 0: eDP; 1: HDMI"
 mode "[disable screen] 0: eDP; 1: HDMI" {
     bindsym 0       exec swaymsg "output $laptop-display disable";      mode "default"
     bindsym 1       exec swaymsg "output $hdmi-diplay disable";         mode "default"
 	bindsym Escape  mode "default"
 }
 
+bindsym $mod+a mode "[audio]"
+mode "[audio]" {
+    bindsym Next    exec pamixer_notify.sh -d 5
+    bindsym Prior   exec pamixer_notify.sh -i 5
+	bindsym Escape  mode "default"
+}
+
 ## dpms
-bindsym $mod+z              exec swaymsg "output * dpms off"
-bindsym $mod+Shift+z        exec swaymsg "output * dpms on"
+bindsym $mod+Shift+z        exec swaymsg "output * dpms off"
+bindsym $mod+z              exec swaymsg "output * dpms on"
 
 # bindsym $mod+slash          exec swaymsg "output $hdmi-diplay dpms on"
 # bindsym $mod+Shift+slash    exec swaymsg "output $hdmi-diplay dpms off"
@@ -56,12 +64,13 @@ bindsym $mod+F12                exec pamixer_notify.sh -i 5
 bindsym $mod+F11                exec pamixer_notify.sh -d 5
 
 # bindsym $mod+F1                 exec pamixer_notify.sh -t
-# bindsym $mod+F2                 exec pamixer_notify.sh -d 5
-# bindsym $mod+F3                 exec pamixer_notify.sh -i 5
+bindsym $mod+F2                 exec pamixer_notify.sh -d 5
+bindsym $mod+F3                 exec pamixer_notify.sh -i 5
 # bindsym $mod+a                  exec st -e alsamixer
 
 ## screenshot
 bindsym $mod+Print          exec grim_auto.sh
+# bindsym $mod+Shift+Print    exec grim_interactive.sh "/tmp/$USER"
 bindsym $mod+Shift+Print    exec swappy_interactive.sh
 bindsym $mod+s              exec qimgv "/tmp/$USER"
 
@@ -193,7 +202,7 @@ bindsym $mod+Shift+space floating toggle
 # extra keys
 #	bindsym XF86Calculator exec st -e python
 #	bindsym Mod4+l exec swaylock --color 000000
-#	bindsym XF86HomePage exec $browser
+#	bindsym XF86Home` exec $browser
 #	bindsym $mod+XF86HomePage exec $alt_browser
 #	bindsym XF86MyComputer exec $fm
 
