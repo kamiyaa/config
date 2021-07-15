@@ -1,0 +1,22 @@
+app-arch/unrar unRAR
+
+media-fonts/corefonts MSttfEULA
+media-fonts/kochi-substitute free-noncomm
+
+sys-kernel/linux-firmware linux-firmware linux-fw-redistributable no-source-code
+# required by discord-bin (argument)
+net-im/discord-bin all-rights-reserved
+# required by sys-firmware/intel-microcode (argument)
+sys-firmware/intel-microcode intel-ucode
+# required by games-util/steam-meta-0-r20160817::steam-overlay
+# required by games-util/steam-meta (argument)
+games-util/steam-launcher ValveSteamLicense
+# required by net-im/zoom (argument)
+>=net-im/zoom-5.4.57862.0110 all-rights-reserved
+# required by lightworks (argument)
+>=media-video/lightworks-2020.1-r3 EditShare
+# required by media-video/lightworks-2020.1-r3::gentoo-zh
+# required by lightworks (argument)
+>=media-gfx/nvidia-cg-toolkit-3.1.0013-r5 NVIDIA-r1
+# required by x11-drivers/nvidia-drivers (argument)
+=x11-drivers/nvidia-drivers-460.39-r1 NVIDIA-r2

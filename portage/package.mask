@@ -1,0 +1,13 @@
+#### Custom Configurations ####
+
+#sys-apps/systemd
+#sys-apps/gentoo-systemd-integration
+#sys-power/upower
+#sys-fs/udev
+#sys-fs/eudev
+
+# <=net-libs/nodejs-13.0.0
+
+dev-lang/python:2.7
+
+# =www-client/firefox-bin-86.0
