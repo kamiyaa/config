@@ -24,7 +24,7 @@ method = "natural" 	# lexical, mtime, natural
 [preview]
 max_preview_size = 2097152 # 2MB
 preview_images = false
-preview_script = "~/.config/joshuto/preview.sh"
+preview_script = "/home/kamiyaa/.config/joshuto/scope.sh"
 
 [tab]
 # inherit, home, root
