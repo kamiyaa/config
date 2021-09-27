@@ -6,9 +6,10 @@ use_trash = false
 # currently does not work
 
 [display]
+automatically_count_files = false
 collapse_preview = true
 # ratios for parent view, current view and preview
-column_ratio = [1, 3, 4]
+column_ratio = [1, 4, 4]
 show_borders = true
 show_hidden = false
 show_icons = false
@@ -24,7 +25,7 @@ method = "natural" 	# lexical, mtime, natural
 [preview]
 max_preview_size = 2097152 # 2MB
 preview_images = false
-preview_script = "/home/kamiyaa/.config/joshuto/scope.sh"
+preview_script = "~/.config/joshuto/scope.sh"
 
 [tab]
 # inherit, home, root

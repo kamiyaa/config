@@ -1,23 +1,35 @@
 [class]
 audio_default	= [
 	{ command = "mpv", args = [ "--" ] },
-	{ command = "mediainfo", confirm_exit = true } ]
+	{ command = "mediainfo", confirm_exit = true },
+]
 
 image_default	= [
 	{ command = "qimgv", fork = true, silent = true },
 	{ command = "krita", fork = true, silent = true },
-	{ command = "mediainfo", confirm_exit = true },
-	{ command = "swappy", args = [ "-f" ], fork = true } ]
+	{ command = "exiftool", confirm_exit = true },
+	{ command = "swappy", args = [ "-f" ], fork = true },
+]
 
 video_default	= [
 	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
 	{ command = "mediainfo", confirm_exit = true },
-	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true } ]
+	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true },
+]
 
 text_default	= [
 	{ command = "micro" },
 	{ command = "gedit", fork = true, silent = true },
-	{ command = "bat", confirm_exit = true } ]
+	{ command = "bat", confirm_exit = true },
+]
+
+libreoffice_default	= [
+	{ command = "libreoffice", fork = true, silent = true },
+]
+
+reader_default		= [
+	{ command = "evince", fork = true, silent = true },
+]
 
 [extension]
 
@@ -55,8 +67,8 @@ mkv.inherit	= "video_default"
 m4v.inherit	= "video_default"
 mov.inherit	= "video_default"
 mp4.inherit	= "video_default"
-webm.inherit	= "video_default"
-webp.inherit	= "video_default"
+webm.inherit	= "audio_default"
+webp.inherit	= "audio_default"
 wmv.inherit	= "video_default"
 
 ## text formats
@@ -137,16 +149,20 @@ m3u.app_list	= [
 	{ command = "mpv" },
 	{ command = "gedit", fork = true, silent = true },
 	{ command = "bat", confirm_exit = true } ]
-doc.app_list	= [
-	{ command = "libreoffice", fork = true, silent = true } ]
-docx.app_list	= [
-	{ command = "libreoffice", fork = true, silent = true } ]
-odt.app_list	= [
-	{ command = "libreoffice", fork = true, silent = true } ]
-odf.app_list	= [
-	{ command = "libreoffice", fork = true, silent = true } ]
-pdf.app_list	= [
-	{ command = "evince", fork = true, silent = true } ]
+
+odt.inherit	= "libreoffice_default"
+odf.inherit	= "libreoffice_default"
+ods.inherit	= "libreoffice_default"
+odp.inherit	= "libreoffice_default"
+
+doc.inherit	= "libreoffice_default"
+docx.inherit	= "libreoffice_default"
+xls.inherit	= "libreoffice_default"
+xlsx.inherit	= "libreoffice_default"
+ppt.inherit	= "libreoffice_default"
+pptx.inherit	= "libreoffice_default"
+
+pdf.inherit	= "reader_default"
 
 tex.app_list	= [
 	{ command = "micro" },
@@ -154,5 +170,5 @@ tex.app_list	= [
 	{ command = "bat", confirm_exit = true },
 	{ command = "pdflatex" } ]
 
-torrent.app_list	= [
+torrent.app_list = [
 	{ command = "transmission-gtk" } ]

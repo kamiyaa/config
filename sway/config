@@ -4,6 +4,8 @@ include keybindings.py
 include startup.sh
 
 ## Settings
+# xwayland disble
+
 focus_wrapping force
 focus_follows_mouse yes
 font noto sans 13

@@ -7,8 +7,8 @@ exec dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPL
 exec gammastep &
 # exec kanshi
 
-exec swayidle \
-	timeout 600 'swaymsg "output * dpms off"'
+#exec swayidle \
+#	timeout 600 'swaymsg "output * dpms off"'
 
 #exec swayidle \
 #	timeout 900 'swaylock'
