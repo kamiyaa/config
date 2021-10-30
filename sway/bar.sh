@@ -7,14 +7,14 @@ bar {
 	modifier Mod1
 	position top
 	strip_workspace_name yes
-	font droid sans mono 22
+	font droid sans mono 28
 #	gaps 0 360
 #	mode hide
 #	mode invisible
 	wrap_scroll no
 #	workspace_buttons no
 	colors {
-		background 0c131a00
+		background 0c131add
 
 		inactive_workspace	0C131ACF	0C131ACF	f0f0f0
 		active_workspace	1C2027		1C2027		1C2027
@@ -22,6 +22,7 @@ bar {
 
 		statusline f0f0f0
 		focused_background 0c131add
+
 #		focused_statusline #ffffff
 #		focused_workspace #006f9b #00363A #fffff
 	}

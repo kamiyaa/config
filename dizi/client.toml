@@ -1,0 +1,14 @@
+[client]
+socket = "/tmp/dizi-server-socket"
+
+home_dir = "~/music"
+
+[client.display]
+show_borders = true
+show_hidden = false
+layout = "~/.config/dizi/layout.json"
+
+[client.display.sort]
+directories_first = true
+reverse = false
+sort_method = "natural"

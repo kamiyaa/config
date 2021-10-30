@@ -5,8 +5,8 @@ audio_default	= [
 ]
 
 image_default	= [
-	{ command = "qimgv", fork = true, silent = true },
-	{ command = "krita", fork = true, silent = true },
+	{ command = "qimgv", args = [ "--" ], fork = true, silent = true },
+	{ command = "krita", args = [ "--" ], fork = true, silent = true },
 	{ command = "exiftool", confirm_exit = true },
 	{ command = "swappy", args = [ "-f" ], fork = true },
 ]
@@ -20,7 +20,7 @@ video_default	= [
 text_default	= [
 	{ command = "micro" },
 	{ command = "gedit", fork = true, silent = true },
-	{ command = "bat", confirm_exit = true },
+	{ command = "bat", args = [ "--paging=always" ] },
 ]
 
 libreoffice_default	= [
@@ -80,6 +80,7 @@ cpp.inherit	= "text_default"
 css.inherit	= "text_default"
 csv.inherit	= "text_default"
 cu.inherit	= "text_default"
+ebuild.inherit	= "text_default"
 eex.inherit	= "text_default"
 env.inherit	= "text_default"
 ex.inherit	= "text_default"

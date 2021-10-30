@@ -13,12 +13,22 @@ output "DP-1" {
 	background $bg_1 fill
 #	position 0,0
 }
+
+output "DP-2" {
+	background $bg_1 fill
+	# transform 90
+}
 # output eDP-1 disable
 # output HDMI-A-1 layout none mirror eDP-1
 
 #input "7119:5:USB_Optical_Mouse" {
 #	left_handed enabled
 #}
+
+input "7119:5:USB_Optical_Mouse" {
+	pointer_accel 1
+#	left_handed enabled
+}
 
 input "1452:591:Keychron_Keychron_K3" {
 	xkb_options "ctrl:nocaps"

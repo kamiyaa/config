@@ -1,0 +1,16 @@
+[server]
+socket = "/tmp/dizi-server-socket"
+
+playlist = "~/.config/dizi/playlist.m3u"
+
+poll_rate = 200
+on_song_change = "~/.bin/dizi-notify.sh"
+
+[server.player]
+# supports alsa, jack
+audio_system = "alsa"
+
+shuffle = false
+repeat = true
+next = true
+
