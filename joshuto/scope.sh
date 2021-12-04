@@ -298,8 +298,9 @@ handle_mime() {
 
         ## Text
         text/* | */xml)
-            bat --color=never --paging=never \
-		--line-range :$PV_HEIGHT --terminal-width=$PV_WIDTH \
+            bat --color=always --paging=never \
+		--style=plain \
+		--terminal-width=$PV_WIDTH \
 		 "${FILE_PATH}" && exit 5
             exit 2;;
 

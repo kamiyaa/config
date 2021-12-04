@@ -22,8 +22,11 @@ mapcommand = [
 	{ keys = [ "page_up" ],		command = "cursor_move_page_up" },
 	{ keys = [ "page_down" ],	command = "cursor_move_page_down" },
 
-#	{ keys = [ "[" ],		command = "parent_cursor_move_up" },
-#	{ keys = [ "]" ],		command = "parent_cursor_move_down" },
+	{ keys = [ "[" ],		command = "preview_cursor_move_up" },
+	{ keys = [ "]" ],		command = "preview_cursor_move_down" },
+
+	{ keys = [ "j" ],		command = ":cursor_move_down " },
+	{ keys = [ "k" ],		command = ":cursor_move_up " },
 
 	{ keys = [ "r" ],		command = "open_with" },
 
@@ -54,15 +57,14 @@ mapcommand = [
 	{ keys = [ ":" ],		command = ":" },
 	{ keys = [ ";" ],		command = ":" },
 
-	{ keys = [ "'" ],		command = ":shell " },
 	{ keys = [ "m", "k" ],		command = ":mkdir " },
 	{ keys = [ "c", "w" ],		command = ":rename " },
 
 	{ keys = [ "/" ],		command = ":search " },
+	{ keys = [ "?" ],		command = "search_fzf" },
 	{ keys = [ "\\" ],		command = ":search_glob " },
-	{ keys = [ "S" ],		command = "search_fzf" },
-	{ keys = [ "C" ],		command = "subdir_fzf" },
-	{ keys = [ "?" ],		command = "help" },
+	{ keys = [ "S" ],		command = "subdir_fzf" },
+	{ keys = [ "`" ],		command = "help" },
 
 	{ keys = [ "n" ],		command = "search_next" },
 	{ keys = [ "N" ],		command = "search_prev" },

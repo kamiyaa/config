@@ -18,7 +18,7 @@
                     {
                         "type": "simple",
                         "widget": "music_player",
-                        "ratio": 1,
+                        "ratio": 2,
                         "border": true
                     },
                     {

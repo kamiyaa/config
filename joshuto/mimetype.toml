@@ -23,17 +23,18 @@ text_default	= [
 	{ command = "bat", args = [ "--paging=always" ] },
 ]
 
-libreoffice_default	= [
-	{ command = "libreoffice", fork = true, silent = true },
+reader_default	= [
+	{ command = "evince", fork = true, silent = true },
 ]
 
-reader_default		= [
-	{ command = "evince", fork = true, silent = true },
+libreoffice_default	= [
+	{ command = "libreoffice", fork = true, silent = true },
 ]
 
 [extension]
 
 ## image formats
+avif.inherit	= "image_default"
 bmp.inherit	= "image_default"
 gif.inherit	= "image_default"
 heic.inherit	= "image_default"
@@ -43,6 +44,7 @@ jpg.inherit	= "image_default"
 pgm.inherit	= "image_default"
 png.inherit	= "image_default"
 ppm.inherit	= "image_default"
+webp.inherit	= "image_default"
 
 svg.app_list	= [
 	{ command = "inkview", fork = true, silent = true },
@@ -56,7 +58,6 @@ flac.inherit	= "audio_default"
 m4a.inherit	= "audio_default"
 mp3.inherit	= "audio_default"
 ogg.inherit	= "audio_default"
-ts.inherit	= "audio_default"
 wav.inherit	= "audio_default"
 
 ## video formats
@@ -67,8 +68,8 @@ mkv.inherit	= "video_default"
 m4v.inherit	= "video_default"
 mov.inherit	= "video_default"
 mp4.inherit	= "video_default"
-webm.inherit	= "audio_default"
-webp.inherit	= "audio_default"
+ts.inherit	= "video_default"
+webm.inherit	= "video_default"
 wmv.inherit	= "video_default"
 
 ## text formats
@@ -164,6 +165,13 @@ ppt.inherit	= "libreoffice_default"
 pptx.inherit	= "libreoffice_default"
 
 pdf.inherit	= "reader_default"
+
+kra.app_list = [
+	{ command = "krita", fork = true, silent = true }
+]
+kdenlive.app_list = [
+	{ command = "kdenlive", fork = true, silent = true }
+]
 
 tex.app_list	= [
 	{ command = "micro" },
