@@ -1,8 +1,3 @@
 profile {
-	output eDP-1 disable
 	output HDMI-A-1 mode 1920x1080
-}
-
-profile {
-	output eDP-1 mode 1920x1080
 }

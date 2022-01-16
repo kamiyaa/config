@@ -1,6 +1,6 @@
 function joshuto() {
-	TIMESTAMP=$(date '+%Y%m%d-%H%M%S')
-	CWD_FILE="/tmp/$USER/joshuto-cwd-$TIMESTAMP"
+	ID="$$"
+	CWD_FILE="/tmp/$USER/joshuto-cwd-$ID"
 	env joshuto --last-dir "$CWD_FILE" $@
 
 	if [ -e "$CWD_FILE" ]; then
@@ -50,4 +50,3 @@ alias cp='cp -v'
 alias dc='cd'
 alias mv='mv -v'
 alias rm='rm -v'
-

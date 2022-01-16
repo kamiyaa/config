@@ -20,7 +20,8 @@ app-crypt/qca qt5
 app-editors/gedit spell
 app-editors/gedit-plugins git terminal
 app-editors/nano magic spell -ncurses -nls
-app-emulation/docker -btrfs
+# move app-emulation/docker app-containers/docker
+app-containers/docker -btrfs
 app-emulation/qemu -vnc smartcard spice usbredir vhost-net
 app-emulation/spice smartcard
 app-emulation/spim -X
@@ -44,7 +45,7 @@ app-shells/bash -net
 app-text/ghostscript-gpl -gtk cups
 app-text/mupdf opengl vanilla
 app-text/poppler cairo qt5
-app-text/texlive cjk graphics humanities science
+app-text/texlive cjk graphics humanities science xetex
 app-text/texlive-core cjk xetex
 app-text/xmlto text
 
@@ -168,8 +169,9 @@ media-libs/libtheora abi_x86_32
 media-libs/libvorbis abi_x86_32
 media-libs/libvpx postproc svc
 media-libs/libwebp abi_x86_32 gif opengl
-media-libs/mesa -bindist -classic -nettle -openvg abi_x86_32 gbm gles2 opencl vaapi vulkan
+media-libs/mesa -bindist -classic -nettle -openvg abi_x86_32 gbm gles2 opencl vulkan
 media-libs/mlt fftw frei0r kdenlive melt opengl python qt5 sdl xml
+media-libs/opencv contrib
 media-libs/openh264 abi_x86_32
 media-libs/phonon -vlc qt5
 media-libs/soxr abi_x86_32
@@ -182,13 +184,13 @@ media-sound/alsa-utils -libsamplerate -nls
 media-sound/audacity -ladspa -midi -nls -vst id3tag sbsms soundtouch twolame vamp vorbis
 media-sound/easytag mp3 mp4 opus speex vorbis wavpack
 media-sound/mpg123 -ipv6 abi_x86_32
-media-sound/moc -aac -cache -oss alsa mad magic sndfile vdpau vorbis wavpack
+media-sound/moc -aac -cache -oss mad magic sndfile vdpau vorbis wavpack
 media-sound/mpd -alsa pulseaudio
 media-sound/pulseaudio -alsa-plugin -ipv6 -ssl -tcpd abi_x86_32 udev
 media-sound/sox -openmp encode id3tag mad ogg oss wavpack
 media-video/ffmpeg aac abi_x86_32 alsa dav1d fdk frei0r gmp libaom libdrm libsoxr libxml2 mp3 opengl openh264 openssl opus pulseaudio rav1e rubberband sdl theora threads wavpack vorbis vpx x264 x265 xcb xvid
-media-video/mpv -cdio -jpeg -lua -postproc -quvi -xscreensaver -xv alsa drm gbm egl libmpv vulkan
-media-video/pipewire bluetooth extra gstreamer pipewire-alsa pulseaudio X
+media-video/mpv -cdio -jpeg -postproc -quvi -xscreensaver -xv alsa drm gbm egl libmpv lua vulkan
+media-video/pipewire bluetooth extra gstreamer jack-sdk pipewire-alsa X
 media-video/simplescreenrecorder mp3 pulseaudio theora vorbis vpx x264
 media-video/vlc -flac -libav -mp3 -ncurses -png -svg libass matroska musepack qt5 shout taglib theora twolame
 
@@ -209,7 +211,7 @@ net-libs/webkit-gtk -geoloc -geolocation libnotify
 net-misc/curl http2 ssl
 net-misc/dhcpcd -embedded
 net-misc/iputils -caps -filecaps ssl
-net-misc/networkmanager -wext dhcpcd policykit wifi
+net-misc/networkmanager -wext dhcpcd iwd policykit wifi
 net-misc/openssh -bindist ssl
 net-misc/spice-gtk gtk3 smartcard usbredir
 net-misc/wget ssl uuid
@@ -826,3 +828,49 @@ x11-wm/mutter udev
 # required by kde-plasma/kde-cli-tools-5.21.5::gentoo
 # required by kde-plasma/kscreenlocker-5.21.5::gentoo
 >=kde-frameworks/kitemmodels-5.82.0 qml
+# required by media-gfx/krita-4.4.8-r1::gentoo[python_single_target_python3_9]
+# required by @selected
+# required by @world (argument)
+>=dev-python/PyQt5-5.15.4-r1 declarative
+# required by media-sound/pulseaudio-15.0-r1::gentoo
+# required by gnome-base/gnome-shell-40.4::gentoo
+# required by x11-terms/gnome-terminal-3.40.3::gentoo[gnome-shell]
+# required by gnome-base/gnome-light-40.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/speexdsp-1.2.0 abi_x86_32
+# required by virtual/libcrypt-2::gentoo
+# required by sys-libs/pam-1.5.1_p20210622-r1::gentoo
+# required by sys-apps/shadow-4.9-r3::gentoo[pam]
+# required by net-misc/openssh-8.6_p1-r2::gentoo
+# required by @__auto_slot_operator_replace_installed__ (argument)
+>=sys-libs/libxcrypt-4.4.25 abi_x86_32
+# required by media-plugins/frei0r-plugins-1.7.0-r1::gentoo[facedetect]
+# required by media-video/ffmpeg-4.4-r1::gentoo[frei0r]
+# required by @selected
+# required by @world (argument)
+>=media-libs/opencv-4.5.2-r3 contribdnn
+# required by media-video/shotcut-21.09.20::gentoo
+# required by shotcut (argument)
+>=media-libs/mlt-7.2.0 jack
+# required by media-video/shotcut-21.03.21::gentoo
+# required by shotcut (argument)
+=media-libs/mlt-6.26.1-r1 jack
+# required by app-admin/mongosh-bin-1.0.7::gentoo
+# required by app-admin/mongosh-bin (argument)
+>=dev-libs/cyrus-sasl-2.1.27-r6 kerberos
+# required by media-gfx/blender-3.0.0::gentoo[ffmpeg]
+# required by media-gfx/blender (argument)
+>=media-video/ffmpeg-4.4-r1 jpeg2k
+# required by media-video/ffmpeg-4.4-r1::gentoo[jpeg2k]
+# required by media-libs/openimageio-2.2.18.0-r1::gentoo[ffmpeg]
+# required by media-libs/osl-1.11.16.0-r2::gentoo
+# required by media-gfx/blender-3.0.0::gentoo[osl]
+# required by media-gfx/blender (argument)
+>=media-libs/openjpeg-2.4.0 abi_x86_32
+# required by app-crypt/seahorse-40.0-r1::gentoo
+# required by app-crypt/seahorse (argument)
+>=app-crypt/gcr-3.40.0 vala
+# required by app-crypt/seahorse-40.0-r1::gentoo
+# required by app-crypt/seahorse (argument)
+>=app-crypt/libsecret-0.20.4-r1 vala

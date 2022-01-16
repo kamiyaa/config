@@ -1,15 +1,17 @@
+
 scroll_offset = 6
 
-xdg_open = false
 use_trash = false
-
-# currently does not work
+xdg_open = false
+xdg_open_fork = true
+watch_files = false
 
 [display]
 automatically_count_files = false
 collapse_preview = true
 # ratios for parent view, current view and preview
 column_ratio = [1, 4, 4]
+# line_number_style = "absolute"
 show_borders = true
 show_hidden = false
 show_icons = false
@@ -26,6 +28,8 @@ method = "natural" 	# lexical, mtime, natural
 max_preview_size = 2097152 # 2MB
 preview_images = false
 preview_script = "~/.config/joshuto/scope.sh"
+# preview_shown_hook_script = "~/.config/joshuto/on_preview_shown"
+# preview_removed_hook_script = "~/.config/joshuto/on_preview_removed"
 
 [tab]
 # inherit, home, root

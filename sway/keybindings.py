@@ -36,9 +36,12 @@ mode "[disable screen] 0: eDP; 1: HDMI" {
 
 bindsym $mod+a mode "[audio]"
 mode "[audio]" {
-    bindsym Next    exec pamixer_notify.sh -d 5
-    bindsym Prior   exec pamixer_notify.sh -i 5
-	bindsym Escape  mode "default"
+    bindsym Up          exec pamixer_notify.sh -i 1
+    bindsym Down        exec pamixer_notify.sh -d 1
+
+    bindsym Prior       exec pamixer_notify.sh -i 5
+    bindsym Next        exec pamixer_notify.sh -d 5
+	bindsym Escape      mode "default"
 }
 
 ## dpms

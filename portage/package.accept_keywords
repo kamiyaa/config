@@ -4,6 +4,7 @@
 =dev-java/openjdk-bin-8.232_p09 ~amd64
 
 app-admin/haskell-updater ~amd64
+app-admin/mongosh-bin ~amd64
 app-admin/mongo-tools ~amd64
 
 app-editors/atom ~amd64
@@ -78,6 +79,7 @@ gui-apps/mako ~amd64
 gui-apps/slurp ~amd64
 gui-apps/swappy ~amd64
 
+gui-libs/gtk ~amd64
 gui-libs/tepl ~amd64
 gui-libs/xdg-desktop-portal-wlr ~amd64
 
@@ -88,15 +90,19 @@ kde-frameworks/extra-cmake-modules ~amd64
 kde-plasma/plasma-desktop ~amd64
 kde-plasma/systemsettings ~amd64
 
+lxde-base/lxappearance ~amd64
 lxde-base/lxterminal ~amd64
 
 media-fonts/courier-prime ~amd64
 media-fonts/fira-mono ~amd64
 
+=media-gfx/blender-3.0.0 ~amd64
 media-gfx/imv ~amd64
 media-gfx/qimgv ~amd64
 
+media-libs/libfreeaptx ~amd64
 media-libs/libopenaptx ~amd64
+media-libs/mesa ~amd64
 media-libs/mlt ~amd64
 media-libs/qt-heif ~amd64
 
@@ -108,7 +114,9 @@ media-tv/gtk-v4l ~amd64
 media-video/lightworks ~amd64
 media-video/obs-studio ~amd64
 media-video/pipewire ~amd64
+media-video/shotcut ~amd64
 media-video/simplescreenrecorder ~amd64
+media-video/wireplumber ~amd64
 
 net-im/discord-bin ~amd64
 net-im/telegram-desktop-bin ~amd64
@@ -130,16 +138,18 @@ sys-fs/go-mtpfs ~amd64
 sys-kernel/git-sources ~amd64
 sys-kernel/linux-headers ~amd64
 =sys-kernel/vanilla-sources-5.4.123 ~amd64
-=sys-kernel/vanilla-sources-5.13.1 ~amd64
+=sys-kernel/vanilla-sources-5.15.1 ~amd64
 sys-power/intel-undervolt ~amd64
 
 www-client/firefox ~amd64
 www-client/firefox-bin ~amd64
 www-client/w3m ~amd64
 
+x11-base/xorg-proto ~amd64
 x11-drivers/xf86-input-libinput ~amd64
-x11-libs/gtk+ ~amd64
-x11-libs/pango **
+x11-libs/libdrm ~amd64
+x11-libs/libva ~amd64
+x11-libs/pango ~amd64
 x11-misc/sxhkd ~amd64
 x11-misc/clipnotify ~amd64
 x11-terms/alacritty ~amd64

@@ -7,6 +7,7 @@ audio_default	= [
 image_default	= [
 	{ command = "qimgv", args = [ "--" ], fork = true, silent = true },
 	{ command = "krita", args = [ "--" ], fork = true, silent = true },
+	{ command = "dragon", fork = true, silent = true },
 	{ command = "exiftool", confirm_exit = true },
 	{ command = "swappy", args = [ "-f" ], fork = true },
 ]
@@ -58,6 +59,7 @@ flac.inherit	= "audio_default"
 m4a.inherit	= "audio_default"
 mp3.inherit	= "audio_default"
 ogg.inherit	= "audio_default"
+webm.inherit	= "audio_default"
 wav.inherit	= "audio_default"
 
 ## video formats
@@ -68,8 +70,7 @@ mkv.inherit	= "video_default"
 m4v.inherit	= "video_default"
 mov.inherit	= "video_default"
 mp4.inherit	= "video_default"
-ts.inherit	= "video_default"
-webm.inherit	= "video_default"
+rmvb.inherit	= "video_default"
 wmv.inherit	= "video_default"
 
 ## text formats
@@ -106,9 +107,11 @@ rkt.inherit	= "text_default"
 rs.inherit	= "text_default"
 scss.inherit	= "text_default"
 sh.inherit	= "text_default"
+sol.inherit	= "text_default"
 srt.inherit	= "text_default"
 svelte.inherit	= "text_default"
 toml.inherit	= "text_default"
+ts.inherit	= "text_default"
 tsx.inherit	= "text_default"
 txt.inherit	= "text_default"
 vim.inherit	= "text_default"
@@ -141,6 +144,12 @@ xz.app_list	= [
 zip.app_list	= [
 	{ command = "unzip", confirm_exit = true },
 	{ command = "file-roller", fork = true, silent = true } ]
+
+rpm.app_list	= [
+	{ command = "file-roller", fork = true, silent = true } ]
+deb.app_list	= [
+	{ command = "file-roller", fork = true, silent = true } ]
+
 
 # misc formats
 aup.app_list	= [
