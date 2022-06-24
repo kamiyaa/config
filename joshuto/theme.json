@@ -1,38 +1,15 @@
-[playing]
-fg = 'light_yellow'
-bg = 'black'
+{
+    "selection": {
+        "fg": "light_yellow",
+        "bold": true,
+    }
 
-[playlist]
-fg = 'magenta'
+    "ext": {
+        "bmp": {
 
-
-[selection]
-fg = "light_yellow"
-bold = true
-
-[executable]
-fg = "light_green"
-bold = true
-
-[regular]
-fg = "white"
-
-[directory]
-fg = "light_blue"
-bold = true
-
-[link]
-fg = "cyan"
-bold = true
-
-[link_invalid]
-fg = "red"
-bold = true
-
-[socket]
-fg = "light_magenta"
-bold = true
-
+        }
+    }
+}
 [ext]
 
 [ext.bmp]
@@ -60,21 +37,27 @@ fg = "magenta"
 fg = "magenta"
 [ext.mp3]
 fg = "magenta"
+[ext.amr]
+fg = "magenta"
 [ext.avi]
 fg = "magenta"
+[ext.flv]
+fg = "magenta"
 [ext.m3u]
-fg = "red"
+fg = "magenta"
 [ext.mov]
 fg = "magenta"
 [ext.m4v]
 fg = "magenta"
 [ext.mp4]
 fg = "magenta"
+[ext.mpg]
+fg = "magenta"
 [ext.mkv]
 fg = "magenta"
 [ext.m4a]
 fg = "magenta"
-[ext.ts]
+[ext.rmvb]
 fg = "magenta"
 [ext.webm]
 fg = "magenta"

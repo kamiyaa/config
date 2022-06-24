@@ -4,8 +4,8 @@ bar {
 	id 0
 	swaybar_command swaybar
 	status_command dwmstatus
-	modifier Mod1
 	position top
+	modifier Mod1
 	strip_workspace_name yes
 	font droid sans mono 20
 #	gaps 0 360

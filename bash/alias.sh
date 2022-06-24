@@ -1,14 +1,29 @@
 function joshuto() {
 	ID="$$"
-	CWD_FILE="/tmp/$USER/joshuto-cwd-$ID"
-	env joshuto --last-dir "$CWD_FILE" $@
+	OUTPUT_FILE="/tmp/$USER/joshuto-cwd-$ID"
+	env joshuto --output-file "$OUTPUT_FILE" $@
+	exit_code=$?
 
-	if [ -e "$CWD_FILE" ]; then
-		JOSHUTO_CWD=$(cat "$CWD_FILE")
-		rm "$CWD_FILE"
-		cd "$JOSHUTO_CWD"
-	fi
+	case "$exit_code" in
+		# regular exit
+		0)
+			;;
+		# output contains current directory
+		101)
+			JOSHUTO_CWD=$(cat "$OUTPUT_FILE")
+			cd "$JOSHUTO_CWD"
+			rm "$OUTPUT_FILE"
+			;;
+		# output selected files
+		102)
+			;;
+		*)
+			echo "Exit code: $exit_code"
+			;;
+	esac
 }
+
+alias oyasumi='systemctl suspend'
 
 ## Rust alternatives
 alias grep='rg'
@@ -36,6 +51,7 @@ alias ll='exa -l'
 alias la='exa -a'
 alias l1='exa -1'
 
+alias po='poweroff.sh'
 alias poweroff='poweroff.sh'
 alias reboot='reboot.sh'
 

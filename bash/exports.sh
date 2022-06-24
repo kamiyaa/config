@@ -9,7 +9,7 @@ export LIBVA_DRIVER_NAME=radeonsi
 export GDK_SCALE=1.3
 export _JAVA_AWT_WM_NONREPARENTING=1
 export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
-
+export ANDROID_HOME="$HOME/Android"
 
 # Sway
 # Fix nouveau on sway
@@ -61,6 +61,11 @@ export PATH="$RUST_DIR/bin:$PATH"
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
+## fnm
+export PATH=/home/kamiyaa/.fnm:$PATH
+eval "$(fnm env)"
+# export NODE_OPTIONS=""
+
 ## Yarn
 export YARN_DIR="$HOME/.yarn"
 export PATH="$YARN_DIR/bin:$PATH"
@@ -79,3 +84,8 @@ export PATH="${GHCUP_DIR}/bin:${PATH}"
 ## DrRacket
 export RACKET_DIR="$HOME/.local/bin/racket"
 export PATH="${RACKET_DIR}/bin:${PATH}"
+
+## aws
+export AWS_DIR="$HOME/.local/v2/2.4.18"
+export PATH="${AWS_DIR}/bin:${PATH}"
+export AWS_PROFILE="dev"

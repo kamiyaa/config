@@ -78,19 +78,19 @@ bindsym $mod+Shift+Print    exec swappy_interactive.sh
 bindsym $mod+s              exec qimgv "/tmp/$USER"
 
 ## dizi
-bindsym $mod+minus          exec dizi_toggle.sh
-bindsym $mod+equal          exec dizi_exit.sh
+bindsym $mod+minus          exec dizi-toggle.sh
+bindsym $mod+equal          exec dizi-exit.sh
 bindsym $mod+bracketleft    exec dizi --previous
 bindsym $mod+bracketright   exec dizi --next
 bindsym XF86AudioPrev       exec dizi --previous
 bindsym XF86AudioNext       exec dizi --next
+bindsym XF86AudioPlay       exec dizi-toggle.sh
 
 ## mocp
 # bindsym $mod+minus          exec mocp_toggle.sh
 # bindsym $mod+equal          exec mocp_exit.sh
 # bindsym $mod+bracketleft    exec mocp -r
 # bindsym $mod+bracketright   exec mocp -f
-bindsym XF86AudioPlay       exec mocp_toggle.sh
 # bindsym XF86AudioPrev       exec mocp -r
 # bindsym XF86AudioNext       exec mocp -f
 
@@ -135,9 +135,9 @@ bindsym $mod+Shift+r reload
 # bindsym $mod+Shift+e restart
 
 # exit sway (logs you out of your wayland session)
-bindsym $mod+Shift+q exit
+bindsym $mod+Ctrl+Backspace exit
 # exit sway (logs you out of your wayland session)
-bindsym $mod+Ctrl+Backspace exec shutdown.sh
+# bindsym $mod+Ctrl+Backspace exec shutdown.sh
 
 # Move your focus around with $mod+[h|j|k|l], like vim
 bindsym $mod+Shift+backslash    focus up

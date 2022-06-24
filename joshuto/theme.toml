@@ -30,65 +30,41 @@ bold = true
 
 [ext]
 
-[ext.bmp]
-fg = "yellow"
-[ext.heic]
-fg = "yellow"
-[ext.jpg]
-fg = "yellow"
-[ext.jpeg]
-fg = "yellow"
-[ext.pgm]
-fg = "yellow"
-[ext.png]
-fg = "yellow"
-[ext.ppm]
-fg = "yellow"
-[ext.svg]
-fg = "yellow"
-[ext.gif]
-fg = "yellow"
+bmp.fg	= "yellow"
+gif.fg	= "yellow"
+heic.fg	= "yellow"
+jpg.fg	= "yellow"
+jpeg.fg	= "yellow"
+pgm.fg	= "yellow"
+png.fg	= "yellow"
+ppm.fg	= "yellow"
+svg.fg	= "yellow"
 
-[ext.wav]
-fg = "magenta"
-[ext.flac]
-fg = "magenta"
-[ext.mp3]
-fg = "magenta"
-[ext.avi]
-fg = "magenta"
-[ext.m3u]
-fg = "magenta"
-[ext.mov]
-fg = "magenta"
-[ext.m4v]
-fg = "magenta"
-[ext.mp4]
-fg = "magenta"
-[ext.mkv]
-fg = "magenta"
-[ext.m4a]
-fg = "magenta"
-[ext.rmvb]
-fg = "magenta"
-[ext.webm]
-fg = "magenta"
-[ext.wmv]
-fg = "magenta"
+wav.fg	= "magenta"
+flac.fg = "magenta"
+mp3.fg	= "magenta"
+amr.fg	= "magenta"
 
-[ext.7z]
-fg = "red"
-[ext.zip]
-fg = "red"
-[ext.bz2]
-fg = "red"
-[ext.gz]
-fg = "red"
-[ext.tar]
-fg = "red"
-[ext.tgz]
-fg = "red"
-[ext.xz]
-fg = "red"
-[ext.rar]
-fg = "red"
+avi.fg	= "magenta"
+flv.fg	= "magenta"
+m3u.fg	= "magenta"
+m4a.fg	= "magenta"
+m4v.fg	= "magenta"
+mkv.fg	= "magenta"
+mov.fg	= "magenta"
+mp4.fg	= "magenta"
+mpg.fg	= "magenta"
+rmvb.fg	= "magenta"
+webm.fg	= "magenta"
+wmv.fg	= "magenta"
+
+7z.fg	= "red"
+bz2.fg	= "red"
+gz.fg	= "red"
+rar.fg	= "red"
+tar.fg	= "red"
+tgz.fg	= "red"
+xz.fg	= "red"
+zip.fg	= "red"
+
+part.fg = "black"
