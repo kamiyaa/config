@@ -40,3 +40,11 @@ input "1452:591:Keychron_Keychron_K3" {
 #seat "seat0" {
 #	hide_cursor when-typing enable
 #}
+
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+	tap "enabled"
+	pointer_accel 0.4
+	scroll_factor 0.6
+	scroll_method "two_finger"
+	natural_scroll "enabled"
+}
