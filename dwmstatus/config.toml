@@ -1,10 +1,10 @@
 
 # Setup 1
-# cpu_temp_file = "/sys/class/hwmon/hwmon0/temp1_input"
+cpu_temp_file = "/sys/class/hwmon/hwmon0/temp1_input"
 
 # Setup 2
-cpu_temp_file = "/sys/class/hwmon/hwmon1/temp1_input"
-cpu_temp_denominator = 1000.0
+# cpu_temp_file = "/sys/class/hwmon/hwmon1/temp1_input"
+# cpu_temp_denominator = 1000.0
 
-battery_file = "/sys/class/power_supply/BAT0/capacity"
-battery_drain = "/sys/class/power_supply/BAT0/power_now"
+# battery_file = "/sys/class/power_supply/BAT0/capacity"
+# battery_drain = "/sys/class/power_supply/BAT0/power_now"
