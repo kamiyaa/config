@@ -1,0 +1,13 @@
+#!/bin/bash
+
+URL=$1
+
+OUTPUT=$2
+
+if [[ $# -ne 2 ]]; then
+	echo "$0 URL OUTPUT" >&2
+	exit 1
+fi
+
+
+ffmpeg -i "$URL" -c copy -map_metadata 0 "$OUTPUT"
