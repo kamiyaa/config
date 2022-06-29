@@ -23,7 +23,6 @@ font=cantarell 28
 ## border
 border-size=2
 border-radius=10
-border-color=#FFBA6Dff
 
 ## margins and padding
 margin=20,20,20,0
@@ -34,18 +33,25 @@ padding=0,14,30,14
 
 ### dark theme
 background-color=#2E2634ff
+border-color=#FFBA6Dff
 # background-color=#2E3436d0
 text-color=#ffffffff
 # Light theme
 # background-color=#f0f0f0f0
 # text-color=#2E3436ff
+progress-color=over #FFBA6D77
 
 ## app specific configs
 
 [app-name=pamixer]
 anchor=top-center
+border-color=#5F941Eff
+border-size=4
+ignore-timeout=0
 group-by=app-name
 history=0
+margin=200,0,200,0
+progress-color=over #5F941Eff
 layer=overlay
 width=250
 
