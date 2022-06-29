@@ -3,34 +3,36 @@
 
 ## position
 anchor=top-right
-# anchor=bottom-right
-# anchor=bottom-left
 layer=top
 
+max-visible=5
 default-timeout=10000
-
 ignore-timeout=1
+
+## history
+history=1
+max-history=100
 
 height=500
 width=800
 
-max-visible=5
-
-# font
+## font
 font=cantarell 28
 #font=droid sans 18
 
-# border
+## border
 border-size=2
 border-radius=10
 border-color=#FFBA6Dff
 
-# margins and padding
+## margins and padding
 margin=20,20,20,0
 # margin=150,20,20,0
 padding=0,14,30,14
 
-# Dark theme
+## colors
+
+### dark theme
 background-color=#2E2634ff
 # background-color=#2E3436d0
 text-color=#ffffffff
@@ -38,9 +40,17 @@ text-color=#ffffffff
 # background-color=#f0f0f0f0
 # text-color=#2E3436ff
 
-# group-by=group-index
+## app specific configs
 
-[app-name="pamixer" grouped=true group-index=12]
+[app-name=pamixer]
+anchor=top-center
+group-by=app-name
+history=0
+layer=overlay
+width=250
+
+[app-name=pamixer grouped=true]
+format=<b>%s</b>\n%b
 
 # background-color=#1D2F40E0
 # anchor=top-center

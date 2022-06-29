@@ -111,15 +111,16 @@ bindsym $mod+Shift+c kill
 bindsym $mod+p exec $menu
 # bindsym $mod+o exec rlaunch -h 40 -f 'Open Sans'
 
-bindsym $mod+i mode "[lang keyboard] e: english; c: chinese; j: japanese;"
+bindsym $mod+i mode "[switch keyboard language]  e | c | z"
 
-mode "[lang keyboard] e: english; c: chinese; j: japanese;" {
-	bindsym c       exec ibus engine libpinyin;     mode "default"
-	bindsym j       exec ibus engine libpinyin;     mode "default"
+mode "[switch keyboard language]  e | c | z" {
 	bindsym e       exec ibus engine xkb:us::eng;   mode "default"
-	bindsym Return  exec ibus engine xkb:us::eng;   mode "default"
-	bindsym Escape  exec ibus engine xkb:us::eng;   mode "default"
+	bindsym c       exec ibus engine libpinyin;     mode "default"
+    bindsym z       exec ibus engine libbopomofo;   mode "default"
+	bindsym Escape  mode "default"
 }
+
+#	bindsym Return  exec ibus engine xkb:us::eng;   mode "default"
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.

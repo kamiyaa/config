@@ -2,6 +2,9 @@ export EDITOR=micro
 
 export LIBVA_DRIVER_NAME=radeonsi
 
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+
 ## GTK related stuff
 # export GDK_BACKEND=wayland or x11
 # export XCURSOR_THEME=deepin
