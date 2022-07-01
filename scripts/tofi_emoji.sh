@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/bash
 
 EMOJI_FILE=~/.bin/emoji_list.csv
 
