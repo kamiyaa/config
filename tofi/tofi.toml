@@ -10,6 +10,8 @@ corner-radius = 10
 
 font-size = 48
 
+num-results = 7
+
 selection-color = #ffba6d
 text-color = #ffffff
 outline-width = 0
