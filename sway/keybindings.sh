@@ -30,9 +30,9 @@ floating_modifier $mod normal
 bindsym $mod+p	exec $menu
 
 ### emojis
-bindsym $mod+e	exec ~/.bin/tofi_emoji.sh
+bindsym $mod+e	exec tofi_emoji.sh
 ### toggle swaybar
-bindsym $mod+b	exec ~/.bin/swaybar_toggle.sh 0
+bindsym $mod+b	exec swaybar_toggle.sh 0
 
 # terminal
 bindsym $mod+Shift+Return	exec $term

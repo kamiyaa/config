@@ -47,7 +47,7 @@ export BAT_CONFIG_PATH="$XDG_CONFIG_HOME/bat/bat.conf"
 
 
 ## Local paths
-export PATH="$HOME/.bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/builds/config/scripts/:$HOME/.bin:$HOME/.local/bin:$PATH"
 
 ## Solana
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
