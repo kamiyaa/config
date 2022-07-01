@@ -51,9 +51,9 @@ alias ll='exa -l'
 alias la='exa -a'
 alias l1='exa -1'
 
-alias po='poweroff.sh'
-alias poweroff='poweroff.sh'
-alias reboot='reboot.sh'
+alias po='tofi_poweroff.sh'
+alias poweroff='tofi_poweroff.sh'
+alias reboot='tofi_reboot.sh'
 
 alias swaylock='swaylock --color 000000'
 

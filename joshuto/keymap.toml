@@ -34,9 +34,6 @@ keymap = [
 	{ keys = [ "[" ],		command = "preview_cursor_move_up" },
 	{ keys = [ "]" ],		command = "preview_cursor_move_down" },
 
-	{ keys = [ "j" ],		command = ":cursor_move_down " },
-	{ keys = [ "k" ],		command = ":cursor_move_up " },
-
 	{ keys = [ "r" ],		command = "open_with" },
 
 	{ keys = [ "c", "d" ],		command = ":cd " },

@@ -7,7 +7,8 @@ set $super Mod4
 set $term alacritty
 set $altterm lxterminal
 
-set $menu dmenu_run.sh
+set $menu tofi-run --config ~/.config/tofi/tofi.toml | xargs swaymsg exec --
+
 set $fm spacefm
 set $browser firefox-wayland
 set $alt_browser google-chrome-stable --force-device-scale-factor=1.1
@@ -18,6 +19,13 @@ set $hdmi-diplay        'HDMI-A-1'
 ##############
 # Keybindings
 ##############
+
+# start launcher
+bindsym $mod+p exec $menu
+
+### emojis
+bindsym $mod+e              exec ~/.bin/tofi_emoji.sh
+bindsym $mod+b              exec ~/.bin/toggle_swaybar.sh 0
 
 ## enable/disable different monitors
 bindsym $super+Tab mode "[enable screen] 0: eDP; 1: HDMI"
@@ -96,10 +104,6 @@ bindsym XF86AudioPlay       exec dizi-toggle.sh
 
 ## misc
 
-### emojis
-bindsym $mod+e              exec ~/.bin/dmenu_emoji.sh
-bindsym $mod+b              exec ~/.bin/toggle_swaybar.sh 0
-
 # terminal
 bindsym $mod+Shift+Return       exec $term
 bindsym $mod+Shift+apostrophe   exec $altterm
@@ -107,8 +111,6 @@ bindsym $mod+Shift+apostrophe   exec $altterm
 # kill focused window
 bindsym $mod+Shift+c kill
 
-# start your launcher
-bindsym $mod+p exec $menu
 # bindsym $mod+o exec rlaunch -h 40 -f 'Open Sans'
 
 bindsym $mod+i mode "[switch keyboard language]  e | c | z"

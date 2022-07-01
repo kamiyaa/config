@@ -7,7 +7,7 @@ layer=top
 
 max-visible=5
 default-timeout=10000
-ignore-timeout=1
+ignore-timeout=0
 
 ## history
 history=1
@@ -43,20 +43,28 @@ progress-color=over #FFBA6D77
 
 ## app specific configs
 
-[app-name=pamixer]
-anchor=top-center
-border-color=#5F941Eff
+[app-name=discord]
+background-color=#282b30FF
+border-color=#7289daFF
 border-size=4
+group-by=app-name
+
+[app-name=pamixer]
+anchor=bottom-right
+background-color=#25283DFF
+border-color=#25283DFF
+border-size=0
 ignore-timeout=0
 group-by=app-name
 history=0
-margin=200,0,200,0
-progress-color=over #5F941Eff
+margin=175,200,175,0
+progress-color=over #127475FF
 layer=overlay
-width=250
+width=300
 
 [app-name=pamixer grouped=true]
 format=<b>%s</b>\n%b
+
 
 # background-color=#1D2F40E0
 # anchor=top-center

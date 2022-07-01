@@ -1,9 +1,10 @@
 #!/bin/dash
 
+TIMEOUT=7000
+
 dizi --toggle-pause
 
 title=$(dizi -q '{file_name}')
+content="$title"
 
-content=$title
-
-notify-send -a 'dizi' -t 5000 '[dizi] Toggle Pause' "$content"
+notify-send -a 'dizi' -t "$TIMEOUT" '[dizi] Toggle Pause' "$content"
