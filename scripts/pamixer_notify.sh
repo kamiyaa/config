@@ -8,7 +8,7 @@ muted=$(pamixer --get-mute)
 volume=$(pamixer --get-volume)
 
 if [ $muted = true ]; then
-	notify-send -a "pamixer" "Volume" "${volume}% (muted)" -h "int:value:${volume}" -t 2000
+	notify-send -a "pamixer" "${volume}% (muted)" -h "int:value:${volume}" -t 2000
 else
-	notify-send -a "pamixer" "Volume" "${volume}%" -h "int:value:${volume}" -t 2000
+	notify-send -a "pamixer" "${volume}%" -h "int:value:${volume}" -t 2000
 fi
