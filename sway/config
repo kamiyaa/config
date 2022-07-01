@@ -1,6 +1,6 @@
 include bar.sh
 include devices.sh
-include keybindings.py
+include keybindings.sh
 include startup.sh
 
 ## Settings
