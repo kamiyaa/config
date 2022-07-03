@@ -1,18 +1,25 @@
+anchor = top-left
 
-
-# font-name =
-anchor = center
-
-background-color = #2e2634
-border-color = #ffba6d
-border-width = 4
+background-color = #1C2027
+border-color = #62A8AC
+border-width = 8
 corner-radius = 10
 
+font-name = droid sans
 font-size = 48
+
+margin-top = 20%
+margin-left = 1%
 
 num-results = 7
 
-selection-color = #ffba6d
-text-color = #ffffff
 outline-width = 0
 outline-color = #ffba6d
+
+prompt-text = "> "
+
+selection-color = #78CAD2
+# selection-background = #0a0c0e
+text-color = #ffffff
+
+width = 90%

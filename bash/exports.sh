@@ -91,4 +91,4 @@ export PATH="${RACKET_DIR}/bin:${PATH}"
 ## aws
 export AWS_DIR="$HOME/.local/v2/2.4.18"
 export PATH="${AWS_DIR}/bin:${PATH}"
-export AWS_PROFILE="dev"
+# export AWS_PROFILE="dev"
