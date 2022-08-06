@@ -2,14 +2,13 @@
 [default_view]
 
 keymap = [
-	{ keys = [ "|" ],		command = ":search_inc " },
-
 	{ keys = [ "T" ],		command = "new_tab" },
 	{ keys = [ "ctrl+t" ],		command = "new_tab" },
 	{ keys = [ "W" ],		command = "close_tab" },
 	{ keys = [ "ctrl+w" ],		command = "close_tab" },
 	{ keys = [ "q" ],		command = "close_tab" },
 	{ keys = [ "Q" ],		command = "quit --output-current-directory" },
+	{ keys = [ "ctrl+q" ],		command = "quit --force" },
 
 	{ keys = [ "R" ],		command = "reload_dirlist" },
 	{ keys = [ "z", "h" ],		command = "toggle_hidden" },
@@ -47,8 +46,8 @@ keymap = [
 	{ keys = [ "y", "p" ],		command = "copy_filepath" },
 	{ keys = [ "y", "d" ],		command = "copy_dirpath" },
 
-	{ keys = [ "delete" ],		command = "delete_files" },
-	{ keys = [ "d", "D" ],		command = "delete_files" },
+	{ keys = [ "delete" ],		command = "delete_files --foreground=true" },
+	{ keys = [ "d", "D" ],		command = "delete_files --foreground=true" },
 
 	{ keys = [ "a" ],		command = "rename_append" },
 	{ keys = [ "A" ],		command = "rename_prepend" },
@@ -69,6 +68,7 @@ keymap = [
 	{ keys = [ "/" ],		command = ":search " },
 	{ keys = [ "?" ],		command = "search_fzf" },
 	{ keys = [ "\\" ],		command = ":search_glob " },
+	{ keys = [ "|" ],		command = ":search_inc " },
 	{ keys = [ "S" ],		command = "subdir_fzf" },
 	{ keys = [ "`" ],		command = "help" },
 

@@ -25,6 +25,8 @@ function joshuto() {
 
 alias oyasumi='systemctl suspend'
 
+alias pretty='npx prettier "frontend/**/*.{tsx,ts}" "backend/**/*.ts" "lib/**/*.ts" --write'
+
 ## Rust alternatives
 alias grep='rg'
 alias bbat='bat --paging never --style numbers'

@@ -1,10 +1,10 @@
 #!/bin/bash
 
-EMOJI_FILE=~/builds/config/scripts/emoji_list.csv
+CSV_FILE="$1"
 
 TOFI_CONFIG=~/.config/tofi/tofi.toml
 
-selected=$(cat "$EMOJI_FILE" | tr ',' ' ' | tofi --config "$TOFI_CONFIG")
+selected=$(cat "$CSV_FILE" | tr ',' ' ' | tofi --config "$TOFI_CONFIG")
 if test "$selected" != ''; then
 	clipboard_content=$(echo "$selected" | cut -d ' ' -f 1)
 	wl-copy "$clipboard_content"

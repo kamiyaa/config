@@ -39,6 +39,7 @@ pgm.fg	= "yellow"
 png.fg	= "yellow"
 ppm.fg	= "yellow"
 svg.fg	= "yellow"
+webp.fg	= "yellow"
 
 wav.fg	= "magenta"
 flac.fg = "magenta"

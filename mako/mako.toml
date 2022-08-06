@@ -17,8 +17,8 @@ height=500
 width=800
 
 ## font
-font=cantarell 28
-#font=droid sans 18
+#font=cantarell 28
+font=droid sans 28
 
 ## border
 border-size=8
@@ -34,7 +34,7 @@ padding=0,14,40,14
 background-color=#1C2027
 border-color=#62A8AC
 # background-color=#2E3436d0
-text-color=#f0f0f0
+text-color=#ffffff
 # Light theme
 # background-color=#f0f0f0
 # text-color=#2E3436ff
@@ -46,7 +46,6 @@ progress-color=over #62A8AC
 background-color=#282b30
 border-color=#7289da
 border-size=4
-group-by=app-name
 
 [app-name=pamixer]
 anchor=bottom-right
@@ -62,6 +61,10 @@ width=300
 
 [app-name=pamixer grouped=true]
 format=<b>%s</b>\n%b
+
+[app-name=dizi]
+history=0
+layer=overlay
 
 # background-color=#1D2F40E0
 # anchor=top-center

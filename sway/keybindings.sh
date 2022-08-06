@@ -30,7 +30,8 @@ floating_modifier $mod normal
 bindsym $mod+p	exec $menu
 
 ### emojis
-bindsym $mod+e	exec tofi_emoji.sh
+bindsym $mod+e	exec tofi_csv.sh ~/builds/config/scripts/emoji_list.csv
+bindsym $mod+u	exec tofi_csv.sh ~/builds/config/scripts/autocomplete_chinese.csv
 ### toggle swaybar
 bindsym $mod+b	exec swaybar_toggle.sh 0
 
@@ -109,7 +110,7 @@ mode "[switch keyboard language]  e | c | z" {
 	bindsym e	exec ibus engine xkb:us::eng;	mode "default"
 	bindsym c	exec ibus engine libpinyin;	mode "default"
 	bindsym z	exec ibus engine libbopomofo;	mode "default"
-	bindsym Escape	mode "default"
+	bindsym Escape	exec ibus engine xkb:us::eng;   mode "default"
 }
 
 ## enable/disable different monitors
