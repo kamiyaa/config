@@ -7,9 +7,10 @@ audio_default	= [
 image_default	= [
 	{ command = "qimgv", args = [ "--" ], fork = true, silent = true },
 	{ command = "krita", args = [ "--" ], fork = true, silent = true },
-	{ command = "dragon", fork = true, silent = true },
 	{ command = "exiftool", confirm_exit = true },
+	{ command = "eog", args = [ "--" ], fork = true, silent = true },
 	{ command = "swappy", args = [ "-f" ], fork = true },
+	{ command = "dragon", fork = true, silent = true },
 ]
 
 video_default	= [

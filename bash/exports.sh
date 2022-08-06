@@ -47,7 +47,7 @@ export BAT_CONFIG_PATH="$XDG_CONFIG_HOME/bat/bat.conf"
 
 
 ## Local paths
-export PATH="$HOME/.bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/builds/config/scripts/:$HOME/.bin:$HOME/.local/bin:$PATH"
 
 ## Solana
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
@@ -91,4 +91,4 @@ export PATH="${RACKET_DIR}/bin:${PATH}"
 ## aws
 export AWS_DIR="$HOME/.local/v2/2.4.18"
 export PATH="${AWS_DIR}/bin:${PATH}"
-export AWS_PROFILE="dev"
+# export AWS_PROFILE="dev"

@@ -17,54 +17,54 @@ height=500
 width=800
 
 ## font
-font=cantarell 28
-#font=droid sans 18
+#font=cantarell 28
+font=droid sans 28
 
 ## border
-border-size=2
+border-size=8
 border-radius=10
 
 ## margins and padding
 margin=20,20,20,0
 # margin=150,20,20,0
-padding=0,14,30,14
+padding=0,14,40,14
 
 ## colors
 
-### dark theme
-background-color=#2E2634ff
-border-color=#FFBA6Dff
+background-color=#1C2027
+border-color=#62A8AC
 # background-color=#2E3436d0
-text-color=#ffffffff
+text-color=#ffffff
 # Light theme
-# background-color=#f0f0f0f0
+# background-color=#f0f0f0
 # text-color=#2E3436ff
-progress-color=over #FFBA6D77
+progress-color=over #62A8AC
 
 ## app specific configs
 
 [app-name=discord]
-background-color=#282b30FF
-border-color=#7289daFF
+background-color=#282b30
+border-color=#7289da
 border-size=4
-group-by=app-name
 
 [app-name=pamixer]
 anchor=bottom-right
-background-color=#25283DFF
-border-color=#25283DFF
+background-color=#1C2027
 border-size=0
 ignore-timeout=0
 group-by=app-name
 history=0
 margin=175,200,175,0
-progress-color=over #127475FF
+progress-color=over #50858B
 layer=overlay
 width=300
 
 [app-name=pamixer grouped=true]
 format=<b>%s</b>\n%b
 
+[app-name=dizi]
+history=0
+layer=overlay
 
 # background-color=#1D2F40E0
 # anchor=top-center
