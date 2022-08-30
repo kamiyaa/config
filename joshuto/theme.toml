@@ -5,6 +5,10 @@ bold = true
 prefix = "  "
 size = 2
 
+[visual_mode_selection]
+fg = "light_red"
+bold = true
+
 [executable]
 fg = "light_green"
 bold = true

@@ -84,6 +84,7 @@ wmv.inherit	= "video_default"
 ## text formats
 build.inherit	= "text_default"
 c.inherit	= "text_default"
+cjs.inherit	= "text_default"
 cmake.inherit	= "text_default"
 conf.inherit	= "text_default"
 cpp.inherit	= "text_default"

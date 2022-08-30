@@ -54,6 +54,7 @@ keymap = [
 
 	{ keys = [ " " ],		command = "select --toggle=true" },
 	{ keys = [ "t" ],		command = "select --all=true --toggle=true" },
+	{ keys = [ "escape" ],		command = "select --all=true --deselect=true" },
 
 	{ keys = [ "w" ],		command = "show_tasks" },
 	{ keys = [ "b", "b" ],		command = "bulk_rename" },

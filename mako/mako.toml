@@ -11,7 +11,7 @@ ignore-timeout=0
 
 ## history
 history=1
-max-history=100
+max-history=1000
 
 height=500
 width=800
