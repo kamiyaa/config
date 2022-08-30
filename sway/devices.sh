@@ -43,7 +43,7 @@ input "1452:591:Keychron_Keychron_K3" {
 
 input "2:7:SynPS/2_Synaptics_TouchPad" {
 	tap "enabled"
-	pointer_accel 0.4
+	pointer_accel 0.3
 	scroll_factor 0.6
 	scroll_method "two_finger"
 	natural_scroll "enabled"
