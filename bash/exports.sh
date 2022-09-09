@@ -22,7 +22,7 @@ export LIBSEAT_BACKEND=logind
 
 export TMP_DIR='/tmp'
 export JOSHUTO_CONFIG_HOME="$HOME/.config/joshuto"
-
+export DIZI_CONFIG_HOME="$HOME/.config/dizi"
 ## Misc
 
 export PKG_CONFIG_PATH=/usr/local/lib64/pkgconfig

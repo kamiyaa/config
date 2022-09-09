@@ -11,9 +11,14 @@ extension=$(/bin/echo "${FILE_PATH##*.}" | awk '{print tolower($0)}')
 
 case "$mimetype" in
 	image/*)
+		kitty +kitten icat \
+			--transfer-mode=file \
+			--clear 2>/dev/null
 		;;
 	*)
-#		kitty +kitten icat --clear
+		kitty +kitten icat \
+			--transfer-mode=file \
+			--clear 2>/dev/null
 		;;
 esac
 

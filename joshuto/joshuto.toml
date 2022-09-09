@@ -1,10 +1,9 @@
-
 scroll_offset = 6
 
 use_trash = false
+watch_files = false
 xdg_open = false
 xdg_open_fork = true
-watch_files = false
 
 [display]
 # default, vsplit
@@ -12,13 +11,11 @@ mode = "default"
 
 automatically_count_files = false
 collapse_preview = true
-# ratios for parent view, current view and preview
 column_ratio = [1, 4, 4]
 # line_number_style = "absolute"
 show_borders = true
 show_hidden = false
 show_icons = false
-show_preview = true
 tilde_in_titlebar = true
 
 [display.sort]
@@ -29,7 +26,6 @@ method = "natural" 	# lexical, mtime, natural
 
 [preview]
 max_preview_size = 2097152 # 2MB
-preview_images = false
 preview_script = "~/.config/joshuto/preview_file.sh"
 # preview_shown_hook_script = "~/.config/joshuto/kitty/on_preview_shown.sh"
 # preview_removed_hook_script = "~/.config/joshuto/kitty/on_preview_removed.sh"

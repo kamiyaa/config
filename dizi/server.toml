@@ -6,9 +6,11 @@ playlist = "~/.config/dizi/playlist.m3u"
 poll_rate = 200
 on_song_change = "~/builds/config/scripts/dizi-notify.sh"
 
-[server.player]
 # supports alsa, jack
+# audio_system = "pipewire"
 audio_system = "alsa"
+
+[server.player]
 
 shuffle = false
 repeat = true
