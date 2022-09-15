@@ -83,11 +83,11 @@ keys = [ "/" ]
 command = "search_skim"
 
 [[keymap]]
-keys = [ "[" ]
+keys = [ "{" ]
 command = "search_prev"
 
 [[keymap]]
-keys = [ "]" ]
+keys = [ "}" ]
 command = "search_next"
 
 [[keymap]]
@@ -157,13 +157,13 @@ request.api = "/player/volume/decrease"
 request.amount = 1
 
 [[keymap]]
-keys = [ "," ]
+keys = [ "[" ]
 command = "server_request"
 request.api = "/player/rewind"
 request.amount = 10
 
 [[keymap]]
-keys = [ "." ]
+keys = [ "]" ]
 command = "server_request"
 request.api = "/player/fast_forward"
 request.amount = 10
