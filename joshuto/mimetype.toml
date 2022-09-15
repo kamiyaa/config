@@ -200,3 +200,19 @@ tex.app_list	= [
 
 torrent.app_list = [
 	{ command = "transmission-gtk" } ]
+
+[mimetype]
+
+[mimetype.application.subtype.zip]
+app_list = [
+	{ command = "unzip", confirm_exit = true },
+	{ command = "file-roller", fork = true, silent = true } ]
+
+[mimetype.application.subtype.octet-stream]
+inherit = "video_default"
+
+[mimetype.text]
+inherit = "text_default"
+
+[mimetype.video]
+inherit = "video_default"
