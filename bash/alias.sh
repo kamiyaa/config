@@ -16,6 +16,8 @@ function joshuto() {
 			;;
 		# output selected files
 		102)
+			cat "$OUTPUT_FILE"
+			rm "$OUTPUT_FILE"
 			;;
 		*)
 			echo "Exit code: $exit_code"

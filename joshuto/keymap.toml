@@ -87,6 +87,10 @@ keymap = [
 	{ keys = [ "s", "s" ],		command = "sort size" },
 	{ keys = [ "s", "e" ],		command = "sort ext" },
 
+	{ keys = [ "m", "s" ],		command = "linemode size" },
+	{ keys = [ "m", "m" ],		command = "linemode mtime" },
+	{ keys = [ "m", "M" ],		command = "linemode sizemtime" },
+
 	# tab switching
 #	{ keys = [ "1" ],		command = "tab_switch_index 1" },
 #	{ keys = [ "2" ],		command = "tab_switch_index 2" },

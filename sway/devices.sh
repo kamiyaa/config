@@ -27,7 +27,7 @@ output "DP-2" {
 
 input "7119:5:USB_Optical_Mouse" {
 	pointer_accel 1
-	scroll_factor 0.6
+	scroll_factor 0.7
 #	left_handed enabled
 }
 

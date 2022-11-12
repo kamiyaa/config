@@ -4,7 +4,7 @@ exec mako --config ~/.config/mako/mako.toml
 exec tsuchita-server
 exec ibus-daemon -drx
 exec dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
-# exec gammastep
+exec gammastep
 # exec kanshi
 
 #exec swayidle \
