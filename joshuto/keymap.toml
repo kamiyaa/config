@@ -115,6 +115,11 @@ keymap = [
 	# { keys = [ "5" ],		command = "numbered_command 5" },
 
 	# bookmarks
+#	{ keys = [ "g"],		command = "cd_bookmark" },
+#	{ keys = [ "+"],		command = "add_bookmark" },
+
+	{ keys = [ "g", "g" ],		command = "cd -" },
+
 	{ keys = [ "g", "r" ],		command = "cd /" },
 	{ keys = [ "g", "b" ],		command = "cd ~/builds" },
 	{ keys = [ "g", "c" ],		command = "cd ~/.config" },

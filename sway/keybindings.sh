@@ -71,7 +71,7 @@ bindsym $mod+F11		exec pamixer_notify.sh -d 5
 ## screenshot
 bindsym $mod+Print		exec grim_auto.sh
 bindsym $mod+Shift+Print	exec swappy_interactive.sh
-bindsym $mod+s			exec qimgv "/tmp/$USER"
+bindsym $mod+s			exec "$term" --command joshuto "/tmp/$USER"
 # bindsym $mod+Shift+Print	exec grim_interactive.sh "/tmp/$USER"
 
 ## dizi

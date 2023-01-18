@@ -11,7 +11,7 @@ set $bg-dark-2		0c131aDD
 set $bg-dark-3		0c131aCF
 # set $primary-color 386296FF
 
-font droid sans mono 20
+font droid sans mono 24
 
 # selector		border		background	text	indicator	child borders
 client.focused		$primary-dark-2	$primary-dark-1	ffffff	$primary-dark-1 $primary-light-1
@@ -25,7 +25,7 @@ bar {
 	position top
 	modifier Mod1
 	strip_workspace_name yes
-	font droid sans mono 20
+	font droid sans mono 24
 #	font terminus mono 14
 #	gaps 0 360
 #	mode hide

@@ -1,4 +1,5 @@
-set $bg_1 /home/kamiyaa/wallpapers/scenery/Anime_Scenery_046-001.png
+# set $bg_1 /home/kamiyaa/wallpapers/scenery/Anime_Scenery_046-001.png
+set $bg_1 /home/kamiyaa/wallpapers/scenery/Anime_Scenery_041.png
 
 output "eDP-1" {
 	background $bg_1 fill

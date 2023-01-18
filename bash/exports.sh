@@ -9,10 +9,14 @@ export QT_IM_MODULE=ibus
 # export GDK_BACKEND=wayland or x11
 # export XCURSOR_THEME=deepin
 # export XCURSOR_SIZE=24
-export GDK_SCALE=1.3
+export GDK_SCALE=1.5
+export QT_SCALE=2.0
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+# Android
 export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
-export ANDROID_HOME="$HOME/Android"
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Sway
 # Fix nouveau on sway
@@ -51,8 +55,6 @@ export PATH="$HOME/builds/config/scripts/:$HOME/.bin:$HOME/.local/bin:$PATH"
 
 ## Solana
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
-## Terra Station
-export PATH="$HOME/.local/opt/Terra Station/:$PATH"
 
 ## Golang
 export GOPATH="$HOME/.go"
@@ -92,3 +94,6 @@ export PATH="${RACKET_DIR}/bin:${PATH}"
 export AWS_DIR="$HOME/.local/v2/2.4.18"
 export PATH="${AWS_DIR}/bin:${PATH}"
 # export AWS_PROFILE="dev"
+
+export FLUTTER_DIR="$HOME/.flutter_sdk/flutter"
+export PATH="$FLUTTER_DIR/bin:$PATH"
