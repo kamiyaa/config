@@ -64,6 +64,7 @@ format=<b>%s</b>\n%b
 
 [app-name=dizi]
 history=0
+group-by=app-name
 layer=overlay
 border-color=#396264
 progress-color=#396264

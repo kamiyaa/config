@@ -50,8 +50,8 @@ keymap = [
 	{ keys = [ "p", "p" ],		command = "paste_files" },
 	{ keys = [ "p", "o" ],		command = "paste_files --overwrite=true" },
 
-	{ keys = [ "delete" ],		command = "delete_files --foreground=true" },
-	{ keys = [ "d", "D" ],		command = "delete_files --foreground=true" },
+	{ keys = [ "delete" ],		command = "delete_files" },
+	{ keys = [ "d", "D" ],		command = "delete_files" },
 
 	{ keys = [ "a" ],		command = "rename_append" },
 	{ keys = [ "A" ],		command = "rename_prepend" },
@@ -127,6 +127,7 @@ keymap = [
 	{ keys = [ "g", "e" ],		command = "cd /etc" },
 	{ keys = [ "g", "h" ],		command = "cd ~/" },
 	{ keys = [ "g", "m" ],		command = "cd /run/media/kamiyaa" },
+	{ keys = [ "g", "s" ],		command = "cd /mnt/samba" },
 	{ keys = [ "g", "M" ],		command = "cd ~/music" },
 	{ keys = [ "g", "p" ],		command = "cd ~/pictures" },
 	{ keys = [ "g", "P" ],		command = "cd ~/Pictures" },

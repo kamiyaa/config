@@ -1,10 +1,14 @@
-#!/bin/dash
+#!/bin/bash
+
+TOFI_CONFIG=~/.config/tofi/tofi.toml
 
 APP='dizi'
 
-if $(dizi --exit 2>/dev/null >/dev/null)
-then
+input=$(echo -e 'yes\nno' | tofi --prompt-text "stop $APP?" --config $TOFI_CONFIG)
+
+if test "$input" = 'yes'; then
 	notify-send -a "$APP" "killing $APP"
+	dizi --exit
 else
-	notify-send -a "$APP" "$APP is not running"
+	notify-send "Cancelled"
 fi

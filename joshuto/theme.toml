@@ -10,8 +10,7 @@ fg = "light_red"
 bold = true
 
 [executable]
-fg = "light_green"
-bold = true
+fg = "green"
 
 [regular]
 fg = "white"

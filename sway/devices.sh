@@ -1,6 +1,8 @@
 # set $bg_1 /home/kamiyaa/wallpapers/scenery/Anime_Scenery_046-001.png
 set $bg_1 /home/kamiyaa/wallpapers/scenery/Anime_Scenery_041.png
 
+seat seat0 xcursor_theme Adwaita 54
+
 output "eDP-1" {
 	background $bg_1 fill
 }
@@ -15,10 +17,15 @@ output "DP-1" {
 #	position 0,0
 }
 
+output 'GIGA-BYTE TECHNOLOGY CO., LTD. M27Q 22450B001265' {
+	mode 2560x1440@165Hz
+}
+
 output "DP-2" {
 	background $bg_1 fill
 	# transform 90
 }
+
 # output eDP-1 disable
 # output HDMI-A-1 layout none mirror eDP-1
 

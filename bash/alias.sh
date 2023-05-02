@@ -42,11 +42,6 @@ alias gl='git log'
 alias gp='git pull'
 alias gs='git status'
 
-## udisks
-alias mount='udisksctl mount -b'
-alias umount='udisksctl unmount -b'
-alias unlock='udisksctl unlock -b'
-
 alias dfc='dfc -d'
 
 alias lss='ls --color=always'
@@ -63,6 +58,10 @@ alias swaylock='swaylock --color 000000'
 
 alias ddate="date '+%Y-%m-%d'"
 alias rsync_date='rsync --dry-run -v'
+
+## udisks
+alias mount='udisksctl mount -b'
+alias unlock='udisksctl unlock -b'
 
 ## Verbose output
 

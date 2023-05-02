@@ -8,9 +8,14 @@ export QT_IM_MODULE=ibus
 ## GTK related stuff
 # export GDK_BACKEND=wayland or x11
 # export XCURSOR_THEME=deepin
-# export XCURSOR_SIZE=24
+export XCURSOR_SIZE=24
 export GDK_SCALE=1.5
-export QT_SCALE=2.0
+
+## QT related stuff
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
+export QT_SCALE_FACTOR=1.5
+export ELM_SCALE=1.5
+
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 # Android
@@ -35,13 +40,6 @@ export GPG_TTY=$(tty)
 ## XDG
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CURRENT_DESKTOP=sway
-
-## QT related stuff
-export QT_QPA_PLATFORMTHEME=qt5ct
-# export QT_QPA_PLATFORM=wayland-egl
-# export SDL_VIDEODRIVER=wayland
-# export QT_AUTO_SCREEN_SCALE_FACTOR=true
-# export QT_DEVICE_PIXEL_RATIO=1
 
 export FZF_DEFAULT_COMMAND='rg --files -i'
 export SKIM_DEFAULT_COMMAND='rg --files -i'
@@ -97,3 +95,6 @@ export PATH="${AWS_DIR}/bin:${PATH}"
 
 export FLUTTER_DIR="$HOME/.flutter_sdk/flutter"
 export PATH="$FLUTTER_DIR/bin:$PATH"
+
+export GCLOUD_DIR="$HOME/.local/google-cloud-sdk"
+export PATH="${GCLOUD_DIR}/bin:${PATH}"

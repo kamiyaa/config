@@ -1,22 +1,36 @@
-set $primary-dark-1	3E6E7A
-set $primary-dark-2	5497A7
-set $primary-dark-3	50858B
 
-set $text-dark-1	f0f0f0
 
-set $primary-light-1	62A8AC
+set $win-focused-border 	728376
+set $win-focused-bg		3e6e7a
+set $win-focused-text		ffffff
 
-set $bg-dark-1		1C2027
-set $bg-dark-2		0c131aDD
-set $bg-dark-3		0c131aCF
+set $win-unfocused-border	62A8AC
+set $win-unfocused-bg		191919
+set $win-unfocused-text		e0e0e0
+
+set $bar-bg			0c131aDD
+
+set $bar-inactive-bg		0c131aCF
+set $bar-inactive-border	0c131aCF
+set $bar-inactive-text		ffffff
+
+set $bar-focused-border		5497A7FF
+set $bar-focused-bg		5497A7FF
+set $bar-focused-text		ffffff
+
 # set $primary-color 386296FF
 
 font droid sans mono 24
 
-# selector		border		background	text	indicator	child borders
-client.focused		$primary-dark-2	$primary-dark-1	ffffff	$primary-dark-1 $primary-light-1
-client.focused_inactive	202020 		202020		f0f0f0	202020
-client.unfocused	202020 		202020		e0e0e0	202020
+# selector	   border background text indicator child borders
+client.focused     $win-focused-border \
+			$win-focused-bg \
+			$win-focused-text \
+			$win-focused-bg \
+			$win-focused-bg
+client.unfocused   $win-unfocused-border \
+			$win-unfocused-bg \
+			$win-unfocused-text
 
 bar {
 	id 0
@@ -33,15 +47,15 @@ bar {
 	wrap_scroll no
 #	workspace_buttons no
 	colors {
-		background		$bg-dark-2
+		background		$bar-bg
 
-		# selector		# border	# background	text	indicator	child borders
-		inactive_workspace	$bg-dark-3	$bg-dark-3	$text-dark-1
-		active_workspace	$bg-dark-1	$bg-dark-1	$bg-dark-1
-		focused_workspace	$primary-dark-2	$primary-dark-1	$text-dark-1
+		# selector  border  background  text  indicator  child  borders
+		inactive_workspace	$bar-inactive-border	$bar-inactive-bg	$bar-inactive-text
+		active_workspace	1C2027			1C2027			1C2027
+		focused_workspace	$bar-focused-border	$bar-focused-bg		$bar-focused-text
 
-		statusline f0f0f0
-		focused_background $bg-dark-2
+		statusline		f0f0f0
+		focused_background	$bar-bg
 
 #		focused_statusline #ffffff
 #		focused_workspace #006f9b #00363A #fffff
