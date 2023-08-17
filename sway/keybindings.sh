@@ -4,7 +4,8 @@
 set $mod		Mod1
 set $super		Mod4
 # set $term gnome-terminal
-set $term		alacritty
+# set $term		alacritty
+set $term		gnome-terminal
 set $altterm		st
 
 set $menu		tofi-run --config ~/.config/tofi/tofi.toml | xargs swaymsg exec --
@@ -43,8 +44,8 @@ bindsym $mod+Shift+apostrophe	exec $altterm
 bindsym $mod+Shift+c	kill
 
 ## dpms
-bindsym $mod+Shift+z	exec swaymsg "output * dpms off"
-bindsym $mod+z		exec swaymsg "output * dpms on"
+bindsym $mod+Shift+z	exec swaymsg "output DP-1 dpms off"
+bindsym $mod+z		exec swaymsg "output DP-1 dpms on"
 
 # bindsym $mod+slash		exec swaymsg "output $hdmi-diplay dpms on"
 # bindsym $mod+Shift+slash	exec swaymsg "output $hdmi-diplay dpms off"
@@ -65,8 +66,9 @@ bindsym XF86AudioMicMute	exec pamixer_notify.sh --source 69 -t
 
 bindsym XF86AudioRaiseVolume	exec pamixer_notify.sh -i 2
 bindsym XF86AudioLowerVolume	exec pamixer_notify.sh -d 2
-bindsym $mod+F12		exec pamixer_notify.sh -i 5
-bindsym $mod+F11		exec pamixer_notify.sh -d 5
+bindsym $mod+F11		exec pamixer_notify.sh -i 2
+bindsym $mod+F10		exec pamixer_notify.sh -d 2
+bindsym $mod+F9			exec pamixer_notify.sh -t
 
 ## screenshot
 bindsym $mod+Print		exec grim_auto.sh
@@ -82,6 +84,10 @@ bindsym $mod+bracketright	exec dizi --next
 bindsym XF86AudioPrev		exec dizi --previous
 bindsym XF86AudioNext		exec dizi --next
 bindsym XF86AudioPlay		exec dizi-toggle.sh
+bindsym $mod+F5			exec dizi-exit.sh
+bindsym $mod+F6			exec dizi --previous
+bindsym $mod+F8			exec dizi --next
+bindsym $mod+F7			exec dizi-toggle.sh
 
 ## mocp
 # bindsym $mod+minus		exec mocp_toggle.sh

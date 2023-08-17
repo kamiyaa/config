@@ -51,7 +51,7 @@ keymap = [
 	{ keys = [ "p", "o" ],		command = "paste_files --overwrite=true" },
 
 	{ keys = [ "delete" ],		command = "delete_files" },
-	{ keys = [ "d", "D" ],		command = "delete_files" },
+	{ keys = [ "d", "D" ],		command = "delete_files --permanently" },
 
 	{ keys = [ "a" ],		command = "rename_append" },
 	{ keys = [ "A" ],		command = "rename_prepend" },
@@ -87,9 +87,12 @@ keymap = [
 	{ keys = [ "s", "s" ],		command = "sort size" },
 	{ keys = [ "s", "e" ],		command = "sort ext" },
 
-	{ keys = [ "m", "s" ],		command = "linemode size" },
-	{ keys = [ "m", "m" ],		command = "linemode mtime" },
-	{ keys = [ "m", "M" ],		command = "linemode sizemtime" },
+	{ keys = ["m", "s"],		command = "linemode size" },
+	{ keys = ["m", "m"],		command = "linemode mtime" },
+	{ keys = ["m", "M"],		command = "linemode size | mtime" },
+	{ keys = ["m", "u"],		command = "linemode user" },
+	{ keys = ["m", "U"],		command = "linemode user | group" },
+	{ keys = ["m", "p"],		command = "linemode perm" },
 
 	# tab switching
 #	{ keys = [ "1" ],		command = "tab_switch_index 1" },

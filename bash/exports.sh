@@ -1,3 +1,5 @@
+export XAUTHORITY=/home/$USER/.Xauthority
+
 export EDITOR=micro
 
 export LIBVA_DRIVER_NAME=radeonsi
@@ -98,3 +100,8 @@ export PATH="$FLUTTER_DIR/bin:$PATH"
 
 export GCLOUD_DIR="$HOME/.local/google-cloud-sdk"
 export PATH="${GCLOUD_DIR}/bin:${PATH}"
+
+export FOUNDRY_DIR="$HOME/.config/.foundry"
+export PATH="${FOUNDRY_DIR}/bin:${PATH}"
+
+export SSH_SECURE_SIGNER='Jeff-secure-signer-dev@13.82.65.190'

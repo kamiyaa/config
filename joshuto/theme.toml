@@ -1,3 +1,10 @@
+# Inactive tabs
+[tabs.inactive]
+
+# Active tabs
+[tabs.active]
+invert=true
+
 [selection]
 fg = "light_yellow"
 bold = true
@@ -11,6 +18,7 @@ bold = true
 
 [executable]
 fg = "green"
+bold = true
 
 [regular]
 fg = "white"

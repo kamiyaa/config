@@ -1,5 +1,7 @@
 # set $bg_1 /home/kamiyaa/wallpapers/scenery/Anime_Scenery_046-001.png
-set $bg_1 /home/kamiyaa/wallpapers/scenery/Anime_Scenery_041.png
+# set $bg_1 /home/kamiyaa/wallpapers/scenery/Anime_Scenery_041.png
+set $bg_1 /home/kamiyaa/wallpapers/scenery/Anime_Scenery_001.png
+# set $bg_1 /home/kamiyaa/wallpapers/scenery/Anime_Scenery_044.png
 
 seat seat0 xcursor_theme Adwaita 54
 
@@ -9,12 +11,13 @@ output "eDP-1" {
 
 output "HDMI-A-1" {
 	background $bg_1 fill
-#	position 0,0
+	position 0,0
+	disable
 }
 
 output "DP-1" {
 	background $bg_1 fill
-#	position 0,0
+	position 1080,0
 }
 
 output 'GIGA-BYTE TECHNOLOGY CO., LTD. M27Q 22450B001265' {
@@ -39,7 +42,13 @@ input "7119:5:USB_Optical_Mouse" {
 #	left_handed enabled
 }
 
-input "1452:591:Keychron_Keychron_K3" {
+input "20051:21511:USB_OPTICAL_MOUSE" {
+	pointer_accel 1
+	scroll_factor 0.7
+#	left_handed enabled
+}
+
+input type:keyboard {
 	xkb_options "ctrl:nocaps"
 	repeat_delay 300
 	repeat_rate 20
