@@ -8,7 +8,7 @@ set $super		Mod4
 set $term		gnome-terminal
 set $altterm		st
 
-set $menu		tofi-run --config ~/.config/tofi/tofi.toml | xargs swaymsg exec --
+set $menu		tofi-run --config ~/.config/tofi/tofi_theme1.toml | xargs swaymsg exec --
 
 set $browser		firefox-wayland
 set $alt_browser	google-chrome-stable --force-device-scale-factor=1.1
@@ -141,7 +141,7 @@ bindsym $mod+Shift+r reload
 # bindsym $mod+Shift+e restart
 
 # exit sway (logs you out of your wayland session)
-bindsym $mod+Ctrl+Backspace exit
+bindsym $mod+Ctrl+Backspace sway_exit.sh
 # exit sway (logs you out of your wayland session)
 # bindsym $mod+Ctrl+Backspace exec shutdown.sh
 

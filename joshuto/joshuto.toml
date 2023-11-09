@@ -16,7 +16,6 @@ column_ratio = [1, 4, 4]
 show_borders = true
 show_hidden = false
 show_icons = false
-tilde_in_titlebar = true
 # none, absolute, relative
 line_number_style = "none"
 

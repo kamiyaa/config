@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TOFI_CONFIG=~/.config/tofi/tofi.toml
+TOFI_CONFIG=~/.config/tofi/tofi_theme1.toml
 
 input=$(sh -c "echo -e 'yes\nno' | tofi --prompt-text 'reboot?' --config $TOFI_CONFIG")
 

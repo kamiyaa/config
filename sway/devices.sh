@@ -42,7 +42,9 @@ input "7119:5:USB_Optical_Mouse" {
 #	left_handed enabled
 }
 
+# Mouse
 input "20051:21511:USB_OPTICAL_MOUSE" {
+	accel_profile "adaptive"
 	pointer_accel 1
 	scroll_factor 0.7
 #	left_handed enabled

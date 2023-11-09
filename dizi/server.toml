@@ -10,7 +10,6 @@ on_song_change = "~/builds/config/scripts/dizi-notify.sh"
 audio_system = "alsa"
 
 [server.player]
-
 shuffle = false
 repeat = true
 next = true

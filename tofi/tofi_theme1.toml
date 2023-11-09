@@ -1,0 +1,29 @@
+anchor = top-left
+
+# font-name = "/usr/share/fonts/fira-code/FiraCode-Medium.ttf"
+font-name = Fira Code
+font-size = 48
+
+num-results = 7
+
+outline-width = 0
+outline-color = #ffba6d
+
+prompt-text = "run: "
+
+selection-color = #78CAD2
+# selection-background = #0a0c0e
+text-color = #ffffff
+
+background-color = #1C2027dd
+border-color = #62A8AC
+
+padding-top = 25%
+padding-bottom = 25%
+padding-left = 25%
+padding-right = 25%
+width = 100%
+height = 100%
+
+border-width = 0
+corner-radius = 0

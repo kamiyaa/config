@@ -15,7 +15,7 @@ export GDK_SCALE=1.5
 
 ## QT related stuff
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
-export QT_SCALE_FACTOR=1.5
+export QT_SCALE_FACTOR=1.2
 export ELM_SCALE=1.5
 
 export _JAVA_AWT_WM_NONREPARENTING=1
@@ -104,4 +104,4 @@ export PATH="${GCLOUD_DIR}/bin:${PATH}"
 export FOUNDRY_DIR="$HOME/.config/.foundry"
 export PATH="${FOUNDRY_DIR}/bin:${PATH}"
 
-export SSH_SECURE_SIGNER='Jeff-secure-signer-dev@13.82.65.190'
+export SECURE_SIGNER_SERVER='Jeff-secure-signer-dev@13.82.65.190'
