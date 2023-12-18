@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TOFI_CONFIG=~/.config/tofi/tofi.toml
+TOFI_CONFIG=~/.config/tofi/tofi_theme1.toml
 
 APP='dizi'
 

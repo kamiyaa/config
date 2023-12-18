@@ -141,7 +141,7 @@ bindsym $mod+Shift+r reload
 # bindsym $mod+Shift+e restart
 
 # exit sway (logs you out of your wayland session)
-bindsym $mod+Ctrl+Backspace sway_exit.sh
+bindsym $mod+Ctrl+Backspace exit
 # exit sway (logs you out of your wayland session)
 # bindsym $mod+Ctrl+Backspace exec shutdown.sh
 

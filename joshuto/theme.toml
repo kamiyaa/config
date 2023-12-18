@@ -62,6 +62,7 @@ bold = true
 bmp.fg	= "yellow"
 gif.fg	= "yellow"
 heic.fg	= "yellow"
+heif.fg	= "yellow"
 jpg.fg	= "yellow"
 jpeg.fg	= "yellow"
 pgm.fg	= "yellow"

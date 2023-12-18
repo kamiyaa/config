@@ -17,6 +17,8 @@ text-color = #ffffff
 
 background-color = #1C2027
 border-color = #62A8AC
+border-width = 2
+corner-radius = 12
 
 margin-top = 20%
 margin-left = 10%
@@ -27,5 +29,3 @@ padding-right = 2%
 width = 80%
 height = 50%
 
-border-width = 2
-corner-radius = 12
