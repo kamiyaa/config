@@ -3,12 +3,13 @@
 
 keymap = [
 	{ keys = [ "T" ],		commands = ["new_tab"] },
-	{ keys = [ "ctrl+t" ],		commands = ["new_tab", "new_tab"] },
+	{ keys = [ "ctrl+t" ],		commands = ["new_tab --cursor"] },
 	{ keys = [ "W" ],		commands = ["close_tab"] },
 	{ keys = [ "ctrl+w" ],		commands = ["close_tab"] },
 	{ keys = [ "q" ],		commands = ["close_tab"] },
+	{ keys = [ "ctrl+q" ],		commands = ["quit"] },
+	{ keys = [ "ctrl+c" ],		commands = ["quit --force"] },
 	{ keys = [ "Q" ],		commands = ["quit --output-current-directory"] },
-	{ keys = [ "ctrl+q" ],		commands = ["quit --force"] },
 
 	{ keys = [ "R" ],		commands = ["reload_dirlist"] },
 	{ keys = [ "z", "h" ],		commands = ["toggle_hidden"] },
@@ -73,7 +74,7 @@ keymap = [
 	{ keys = [ "/" ],		commands = [":search "] },
 	{ keys = [ "?" ],		commands = ["search_fzf"] },
 	{ keys = [ "\\" ],		commands = [":search_glob "] },
-	{ keys = [ "|" ],		commands = [":search_inc "] },
+	{ keys = [ "|" ],		commands = [":select_glob "] },
 	{ keys = [ "S" ],		commands = ["subdir_fzf"] },
 	{ keys = [ "f10" ],		commands = ["help"] },
 
@@ -95,12 +96,6 @@ keymap = [
 	{ keys = ["m", "p"],		commands = ["linemode perm"] },
 
 	# tab switching
-#	{ keys = [ "1" ],		commands = ["tab_switch_index 1"] },
-#	{ keys = [ "2" ],		commands = ["tab_switch_index 2"] },
-#	{ keys = [ "3" ],		commands = ["tab_switch_index 3"] },
-#	{ keys = [ "4" ],		commands = ["tab_switch_index 4"] },
-#	{ keys = [ "5" ],		commands = ["tab_switch_index 5"] },
-
 	{ keys = [ "1" ],		commands = ["numbered_command 1"] },
 	{ keys = [ "2" ],		commands = ["numbered_command 2"] },
 	{ keys = [ "3" ],		commands = ["numbered_command 3"] },
@@ -110,12 +105,6 @@ keymap = [
 	{ keys = [ "7" ],		commands = ["numbered_command 7"] },
 	{ keys = [ "8" ],		commands = ["numbered_command 8"] },
 	{ keys = [ "9" ],		commands = ["numbered_command 9"] },
-
-	# { keys = [ "1" ],		commands = ["numbered_command 1"] },
-	# { keys = [ "2" ],		commands = ["numbered_command 2"] },
-	# { keys = [ "3" ],		commands = ["numbered_command 3"] },
-	# { keys = [ "4" ],		commands = ["numbered_command 4"] },
-	# { keys = [ "5" ],		commands = ["numbered_command 5"] },
 
 	# bookmarks
 #	{ keys = [ "g"],		commands = ["cd_bookmark"] },
