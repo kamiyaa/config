@@ -1,3 +1,12 @@
+##########################################
+## General
+##########################################
+lscolors_enabled = false
+
+##########################################
+## Tabs
+##########################################
+
 [tabs]
 [tabs.styles]
 
@@ -23,16 +32,25 @@ bold = true
 # There are more style options and strings to configure
 # the tab-bar theme.
 
+##########################################
+## File List - Selections
+##########################################
+
+# Selected files (standard selection)
 [selection]
 fg = "light_yellow"
 bold = true
-[selection.prefix]
-prefix = "  "
-size = 2
+prefix = " "
 
+# Files selected in current visual mode
 [visual_mode_selection]
 fg = "light_red"
 bold = true
+prefix = "v "
+
+##########################################
+## File List - System File Types
+##########################################
 
 [executable]
 fg = "green"
@@ -98,5 +116,3 @@ tar.fg	= "red"
 tgz.fg	= "red"
 xz.fg	= "red"
 zip.fg	= "red"
-
-part.fg = "white"
