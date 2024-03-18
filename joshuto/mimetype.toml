@@ -1,13 +1,13 @@
 [class]
 audio_default	= [
 	{ command = "mpv", args = [ "--" ] },
-	{ command = "mediainfo", confirm_exit = true },
+	{ command = "mediainfo", pager = true },
 ]
 
 image_default	= [
 	{ command = "qimgv", args = [ "--" ], fork = true, silent = true },
 	{ command = "krita", args = [ "--" ], fork = true, silent = true },
-	{ command = "exiftool", confirm_exit = true },
+	{ command = "exiftool", pager = true },
 	{ command = "eog", args = [ "--" ], fork = true, silent = true },
 	{ command = "swappy", args = [ "-f" ], fork = true },
 	{ command = "dragon", fork = true, silent = true },
@@ -15,9 +15,9 @@ image_default	= [
 
 video_default	= [
 	{ command = "mpv", args = [ "--" ], fork = true, silent = true },
-	{ command = "exiftool", confirm_exit = true },
+	{ command = "exiftool", pager = true },
 	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true },
-	{ command = "mediainfo", confirm_exit = true },
+	{ command = "mediainfo", pager = true },
 	{ command = "qimgv", fork = true, silent = true },
 ]
 
@@ -132,28 +132,28 @@ yml.inherit	= "text_default"
 
 # archive formats
 7z.app_list	= [
-	{ command = "7z", args = [ "x" ], confirm_exit = true },
+	{ command = "7z", args = [ "x" ], pager = true },
 	{ command = "file-roller", fork = true, silent = true } ]
 bz2.app_list	= [
-	{ command = "tar", args = [ "-xvjf" ], confirm_exit = true },
+	{ command = "tar", args = [ "-xvjf" ], pager = true },
 	{ command = "file-roller", fork = true, silent = true } ]
 gz.app_list	= [
-	{ command = "tar", args = [ "-xvzf" ], confirm_exit = true },
+	{ command = "tar", args = [ "-xvzf" ], pager = true },
 	{ command = "file-roller", fork = true, silent = true } ]
 tar.app_list	= [
-	{ command = "tar", args = [ "-xvf" ], confirm_exit = true },
+	{ command = "tar", args = [ "-xvf" ], pager = true },
 	{ command = "file-roller", fork = true, silent = true } ]
 tgz.app_list	= [
-	{ command = "tar", args = [ "-xvzf" ], confirm_exit = true },
+	{ command = "tar", args = [ "-xvzf" ], pager = true },
 	{ command = "file-roller", fork = true, silent = true } ]
 rar.app_list	= [
-	{ command = "unrar", args = [ "x" ], confirm_exit = true },
+	{ command = "unrar", args = [ "x" ], pager = true },
 	{ command = "file-roller", fork = true, silent = true } ]
 xz.app_list	= [
-	{ command = "tar", args = [ "-xvJf" ], confirm_exit = true },
+	{ command = "tar", args = [ "-xvJf" ], pager = true },
 	{ command = "file-roller", fork = true, silent = true } ]
 zip.app_list	= [
-	{ command = "unzip", confirm_exit = true },
+	{ command = "unzip", pager = true },
 	{ command = "file-roller", fork = true, silent = true } ]
 
 rpm.app_list	= [
@@ -170,7 +170,7 @@ m3u.app_list	= [
 	{ command = "micro" },
 	{ command = "mpv" },
 	{ command = "gedit", fork = true, silent = true },
-	{ command = "bat", confirm_exit = true } ]
+	{ command = "bat", pager = true } ]
 
 odt.inherit	= "libreoffice_default"
 odf.inherit	= "libreoffice_default"
@@ -196,7 +196,7 @@ kdenlive.app_list = [
 tex.app_list	= [
 	{ command = "micro" },
 	{ command = "gedit", fork = true, silent = true },
-	{ command = "bat", confirm_exit = true },
+	{ command = "bat", pager = true },
 	{ command = "pdflatex" } ]
 
 torrent.app_list = [
@@ -206,7 +206,7 @@ torrent.app_list = [
 
 [mimetype.application.subtype.zip]
 app_list = [
-	{ command = "unzip", confirm_exit = true },
+	{ command = "unzip", pager = true },
 	{ command = "file-roller", fork = true, silent = true } ]
 
 [mimetype.application.subtype.octet-stream]

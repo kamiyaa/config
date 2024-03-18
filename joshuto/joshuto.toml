@@ -1,4 +1,9 @@
-scroll_offset = 6
+
+
+numbered_command = false
+
+mouse_support = false
+focus_on_create = true
 
 use_trash = true
 watch_files = false
@@ -32,7 +37,9 @@ sort_method = "natural" 	# lexical, mtime, natural
 
 [preview]
 max_preview_size = 2097152 # 2MB
-preview_script = "~/.config/joshuto/preview_file.sh"
+# preview_protocol = auto
+
+# preview_script = "~/.config/joshuto/preview_file.sh"
 # preview_shown_hook_script = "~/.config/joshuto/kitty/on_preview_shown.sh"
 # preview_removed_hook_script = "~/.config/joshuto/kitty/on_preview_removed.sh"
 

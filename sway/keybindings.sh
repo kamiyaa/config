@@ -8,7 +8,7 @@ set $super		Mod4
 set $term		gnome-terminal
 set $altterm		st
 
-set $menu		tofi-run --config ~/.config/tofi/tofi_theme1.toml | xargs swaymsg exec --
+set $menu		tofi_app_launcher.sh
 
 set $browser		firefox-wayland
 set $alt_browser	google-chrome-stable --force-device-scale-factor=1.1

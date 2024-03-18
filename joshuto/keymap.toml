@@ -60,6 +60,7 @@ keymap = [
 	{ keys = [ " " ],		commands = ["select --toggle=true"] },
 	{ keys = [ "t" ],		commands = ["select --all=true --toggle=true"] },
 	{ keys = [ "escape" ],		commands = ["select --all=true --deselect=true"] },
+#	{ keys = [ "escape" ],		commands = ["cancel_file_operation"] },
 
 	{ keys = [ "w" ],		commands = ["show_tasks"] },
 	{ keys = [ "b", "b" ],		commands = ["bulk_rename"] },
@@ -127,6 +128,8 @@ keymap = [
 	{ keys = [ "g", "v" ],		commands = ["cd ~/videos"] },
 	{ keys = [ "g", "u" ],		commands = ["cd ~/documents/utsc"] },
 	{ keys = [ "g", "y" ],		commands = ["cd ~/youtube"] },
+
+	{ keys = [ "v" ],		commands = ["toggle_visual"] },
 ]
 
 [task_view]
