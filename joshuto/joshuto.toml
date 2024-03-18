@@ -9,6 +9,7 @@ use_trash = true
 watch_files = false
 xdg_open = false
 xdg_open_fork = false
+case_insensitive_ext = true
 
 [display]
 # default, vsplit

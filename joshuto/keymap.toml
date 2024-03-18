@@ -111,6 +111,8 @@ keymap = [
 #	{ keys = [ "g"],		commands = ["cd_bookmark"] },
 #	{ keys = [ "+"],		commands = ["add_bookmark"] },
 
+	{ keys = ["V"],			commands = ["toggle_visual"] },
+
 	{ keys = [ "g", "g" ],		commands = ["cd -"] },
 
 	{ keys = [ "g", "r" ],		commands = ["cd /"] },

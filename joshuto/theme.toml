@@ -1,3 +1,12 @@
+##########################################
+## General
+##########################################
+lscolors_enabled = false
+
+##########################################
+## Tabs
+##########################################
+
 [tabs]
 [tabs.styles]
 
@@ -31,14 +40,25 @@ copy.bold = true
 symlink.fg = "rgb(254, 132, 172)" # pink
 symlink.bold = true
 
+##########################################
+## File List - Selections
+##########################################
+
+# Selected files (standard selection)
 [selection]
 fg = "light_yellow"
 bold = true
-prefix = "  "
+prefix = " "
 
+# Files selected in current visual mode
 [visual_mode_selection]
 fg = "light_red"
 bold = true
+prefix = "v "
+
+##########################################
+## File List - System File Types
+##########################################
 
 [executable]
 fg = "green"
@@ -104,5 +124,3 @@ tar.fg	= "red"
 tgz.fg	= "red"
 xz.fg	= "red"
 zip.fg	= "red"
-
-part.fg = "white"
